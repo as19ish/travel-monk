@@ -1,0 +1,98 @@
+
+<style>
+
+body {
+  background-color: #2F3242;
+}
+svg {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
+
+@keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 700px) {
+  svg {
+    position: absolute;
+    width:10%;
+    height:5%;
+    top: 5rem;
+    left: 5rem;
+    margin:0 !important;
+  }
+  .message-box {
+    width:50%;
+    height:30%;
+    top: 5rem;
+    left: 5rem;
+    margin:0 !important;
+    text-align: center;
+  }
+}
+
+</style>
+
+
+<div class="message-box">
+  <h1>Hike2Heaven trekking tourism in uttarakhand himalayas</h1>
+  <p>Page not found</p>
+  <div class="buttons-con">
+    <div class="action-link-wrap">
+      <a href="http://localhost:8000/" class="link-button">Go to Home Page</a>
+    </div>
+  </div>
+</div> 

@@ -1,0 +1,111 @@
+.track_detail_form_container{
+background: -webkit-gradient( linear, left top, left bottom, from(#ffc107), to(rgba(132, 122, 57, 0.95))), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
+}
+
+
+@media screen and (min-width: 900px) {
+.carousel_container1
+{
+width: 100% !important;
+padding-top: 3% !important;
+padding-left: 13% !important;
+padding-right: 13% !important;
+margin-bottom:50px;
+}
+.h_450px
+{
+ height:450px;
+ width:100%;
+}
+.main_carous
+{
+width: 100% !important;
+}
+
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+
+
+}
+
+.div_static_back_student
+{
+height:350px;
+background:url(/static/media/customize/customize_main.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+
+.rafting_container_padding{
+padding-top:10px; 
+padding-bottom:50px;
+padding-left:100px;
+padding-right:100px;
+}
+
+@media screen and (max-width: 800px) {
+
+.padding_20
+{
+padding-left:20px;
+padding-right:20px;
+}
+.rafting_container_padding{
+padding: 10px !important;
+}
+}
+
+.h_w_img
+{
+ height:250px;
+ width:100%;
+}
+.col_mar
+{
+ margin-bottom:50px;
+}
+
+.all_blogs_heading {
+    text-align: center;
+    font-family: fantasy;
+    }
+.track_detail_form_container {
+padding-right:15px;
+padding-left:15px;
+background: -webkit-gradient( linear, left top, left bottom, from(#ffc107), to(rgba(132, 122, 57, 0.95))), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
+}

@@ -1,0 +1,38 @@
+pip install celery
+pip install django-celery-results
+
+In settings.py add these lines
+
+	CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+	CELERY_ACCEPT_CONTENT = ['application/json']
+	CELERY_RESULT_SERIALIZER = 'json'
+	CELERY_TASK_SERIALIZER = 'json'
+	CELERY_RESULT_BACKEND = 'django-db'
+
+In settings.py in installed apps-> add this
+	'django_celery_results'
+	
+In main project-app folder add file -> celery.py
+
+In init.py isnside project-app folder add these lines ->
+
+# This will make sure the app is always imported when
+# Django starts so that shared_task will use this app.
+from .celery import app as celery_app
+
+__all__ = ('celery_app',)
+
+In your apps add tasks.py file
+
+Install rabbitmq message broker and start.
+Refer this link to install -> https://medium.com/@kiranbs890/rabbitmq-setup-on-local-machine-windows-958bada6003c
+
+Run celery server using following command
+
+celery -A saavan worker -l info --pool=solo (for windows only)    (here saavan is project name)
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+
+.footer_container
+{
+padding-top:50px !important;
+padding-left:100px !important;
+padding-right:100px !important;
+padding-bottom:20px !important;
+height:auto;
+background:black;
+color:white;
+font-size:1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+.footer_container
+{
+padding-top:10px !important;
+padding-left:10px !important;
+padding-right:10px !important;
+padding-bottom:50px !important;
+}
+ }
+ 
+
+.footer_container .row
+{
+margin:0px !important;
+}

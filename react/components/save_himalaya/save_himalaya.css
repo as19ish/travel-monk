@@ -1,0 +1,31 @@
+.border_bottom{
+border-bottom: 2px solid #FFCC03;
+border-top: 2px solid #FFCC03;
+}
+.himalaya_tab .tab-content .tab-pane
+{
+  min-height:200px;
+}
+
+.him_para
+{
+line-height: 1.7;
+font-size: 15px;
+font-family: Roboto Slab,Helvetica Neue,Helvetica,Arial,sans-serif;
+color:#6c757d !important;
+}
+
+@media screen and (max-width: 800px) {
+.him_para
+{
+font-size: 11px;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+.pad_cen
+{
+padding: 1% 20%;
+}
+}

@@ -1,0 +1,217 @@
+
+.all_blogs_heading {
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+}
+
+
+.review_text
+{
+padding:2px;
+text-align:center;
+font-size:16px;
+text-transform:capitalize;
+
+}
+@media screen and (max-width: 900px) {
+.review_text
+{
+ font-size:12px;
+}
+.star_width_half_rem
+{
+font-size:8px;
+}
+
+.card_padding_0_200px
+{
+  padding:0 30px !important;
+}
+.img_all_review
+{
+width:100% !important;
+height:50px !important;
+}
+ }
+
+.card_padding_0_200px
+{
+  padding:0 200px;
+}
+
+.img_all_review
+{
+width:70px;
+height:70px;
+}
+
+/* loading part*/
+
+.container_loading {
+	z-index: 999;
+	height: 2em;
+	width: 15em;
+	overflow: show;
+}
+
+.bar {
+	width: 10px;
+	height: 2px;
+	margin-right: 4px;
+	display: inline-block;
+	background-color: #7B5DED;
+}
+
+.progress {
+	width: 172px;
+	height: 5px;
+	display: block;
+	background-color: #7B5DED;
+	position: relative;
+	top: 10px;
+	animation-name: Progress;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0S;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Progress {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 172px;
+	}
+}
+
+.bar1 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.03s;
+}
+
+.bar2 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.06s;
+}
+
+.bar3 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.09s;
+}
+
+.bar4 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.12s;
+}
+
+.bar5 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.15s;
+}
+
+.bar6 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.18s;
+}
+
+.bar7 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.21s;
+}
+
+.bar8 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.24s;
+}
+
+.bar9 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.27s;
+}
+
+.bar10 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+}
+
+@keyframes Bar {
+	0% {
+		background-color: #7B5DED;
+		transform: scaleY(0.5);
+	}
+
+	100% {
+		transform: scaleY(10);
+	}
+}

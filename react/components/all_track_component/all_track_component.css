@@ -1,0 +1,267 @@
+.breadcrumb
+{
+background:none !important;
+}
+.col_pad_track
+{
+padding:0 !important;
+}
+.track_row
+{
+  font-family:'Poppins', sans-serif;
+  font-weight: 100;
+  font-size:large;
+}
+.view_all_div
+{
+ text-align:center;
+ margin-top:1.5em;
+}
+.flex-container{
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  margin: 0;
+  list-style: none;
+  background: white;
+}
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 20em;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+ .flex-item {
+ width:100% !important;
+ }
+ .flex-container{
+ padding:1em !important;
+ }
+}
+
+@media screen and (min-width: 801px) {
+ .flex-container{
+ justify-content: center;
+ padding: 1rem 8rem;
+ }
+ .custom_card {
+ margin-right:12px;
+ }
+ 
+}
+
+.skyblue_transient
+{
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%) !important;
+padding-top:2rem !important;
+}
+.track_image_heading
+{
+  text-align: center;
+  font-family: fantasy;
+  margin:0 !important;
+}
+.custom_card {
+ width:22em !important;
+ cursor:pointer;
+ }
+@media screen and (max-width: 800px) {
+ .custom_card {
+ width:100% !important;
+ margin:1.5em 0 !important;
+ }
+ }
+
+ .card__one {
+	 transition: transform 0.5s;
+}
+ /*.card__one::after {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+	 box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .15);
+	 content: '';
+	 opacity: 0;
+	 z-index: -1;
+}*/
+ .card__one:hover, .card__one:focus {
+	 transform: scale3d(1.1, 1.1, 1);
+}
+ .card__one:hover::after, .card__one:focus::after {
+	 opacity: 1;
+}
+
+
+
+/* loading part*/
+
+.container_loading {
+	z-index: 999;
+	height: 2em;
+	width: 15em;
+	overflow: show;
+}
+
+.bar {
+	width: 10px;
+	height: 2px;
+	margin-right: 4px;
+	display: inline-block;
+	background-color: #7B5DED;
+}
+
+.progress {
+	width: 172px;
+	height: 5px;
+	display: block;
+	background-color: #7B5DED;
+	position: relative;
+	top: 10px;
+	animation-name: Progress;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0S;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Progress {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 172px;
+	}
+}
+
+.bar1 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.03s;
+}
+
+.bar2 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.06s;
+}
+
+.bar3 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.09s;
+}
+
+.bar4 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.12s;
+}
+
+.bar5 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.15s;
+}
+
+.bar6 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.18s;
+}
+
+.bar7 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.21s;
+}
+
+.bar8 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.24s;
+}
+
+.bar9 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.27s;
+}
+
+.bar10 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+}
+
+@keyframes Bar {
+	0% {
+		background-color: #7B5DED;
+		transform: scaleY(0.5);
+	}
+
+	100% {
+		transform: scaleY(10);
+	}
+}

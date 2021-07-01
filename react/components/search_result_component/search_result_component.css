@@ -1,0 +1,35 @@
+
+.search_result_heading
+{
+  text-align: center;
+  margin-top:4em;
+  margin-bottom:4em;
+}
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:2rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content:normal;
+}
+
+@media (min-width: 40rem) {
+
+.main {
+    max-width: 1400px;
+    padding: 1rem 8rem;
+  }
+  }
+  
+  @media (max-width: 39rem) {
+  .main {
+    padding: 0.5rem;
+    height:auto;
+  }
+  }

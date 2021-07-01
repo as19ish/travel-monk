@@ -1,0 +1,152 @@
+
+.search_col
+{
+ text-align:left;
+}
+
+
+.top-header .container, .top-navigation .container {
+    width: 100%;
+}
+
+.top-header .container {
+    position: relative;
+}
+.padding-left {
+    padding-left: 10px;
+}
+
+.logo {
+    margin: 20px 0;
+    position: relative; 
+    z-index: 5;
+}
+.padding-left {
+    padding-left: 0;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.top-header .pull-right {
+    margin: 35px 0 0;
+    text-align: right;
+    position: relative;
+    z-index: 5;
+    padding-left: 0;
+}
+.padding-right {
+    padding-right: 0;
+}
+.pull-right {
+    float: right;
+}
+.pull-right {
+    float: right !important;
+}
+
+.short-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.top-header .pull-right {
+    margin: 35px 0 0;
+    text-align: right;
+    position: relative;
+    z-index: 5;
+    padding-left: 0;
+}
+
+.short-info li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.short-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.short-info li .info-label {
+    display: block;
+    color: #b3b9bd;
+    font-size: 12px;
+    line-height: 1.333;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.short-info li a {
+    color: #000000;
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.short-info li > a.show-mobile {
+    display: none;
+}
+.short-info li a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+
+
+
+
+.s_col
+{
+text-align:center;
+padding:0px !important;
+}
+
+.s_col .img-thumbnail
+{
+padding:.16rem !important;
+}
+
+.s_row
+{
+padding: 5px 1px;
+margin:0px !important;
+}
+
+@media screen and (max-width: 800px) {
+
+.s_container
+{
+padding:5px !important;
+}
+  .head_image {
+   height:60px;
+   width:60px;
+  }
+  .search_hide
+  {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .head_image {
+   height:60px;
+   width:60px;
+  }
+}
+
+.head_image {
+    background-color: #fff000;
+    background-image: linear-gradient(315deg, #fff000 0%, #ed008c 74%);
+    border: none; 
+    }
+

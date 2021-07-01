@@ -1,0 +1,52 @@
+.all_blogs_heading {
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+}
+
+
+.review_text
+{
+padding:2px;
+text-align:center;
+font-size:16px;
+text-transform:capitalize;
+
+}
+@media screen and (max-width: 900px) {
+.review_text
+{
+ font-size:12px;
+}
+.star_width_half_rem
+{
+font-size:8px;
+}
+
+.card_padding_0_200px
+{
+  padding:0 30px !important;
+}
+ }
+
+.card_padding_0_200px
+{
+  padding:0 200px;
+}

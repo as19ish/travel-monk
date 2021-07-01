@@ -1,0 +1,31 @@
+.all_blogs_heading{
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .all_blogs_card
+  {
+    cursor:pointer;
+  }
+  .all_blogs_row
+  {
+      font-family: sans-serif;
+    font-style: inherit;
+    font-size: 20px;
+    font-weight: 600
+  }
+ .all_blogs_container
+ {
+  margin-top:2.5%;
+  margin-bottom:2.5%;
+   padding:0 ! important;
+ }
+
+ @media (min-width: 1080px)
+ {
+ .all_blogs_container {
+    max-width: 90%;
+}
+
+ }

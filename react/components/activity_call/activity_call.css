@@ -1,0 +1,128 @@
+.dropdown-menu
+{
+top:120% !important;
+margin:0;
+min-width:15rem;
+border:none !important;
+border-radius:0 !important;
+background:rgb(255, 204, 3);
+}
+.nav_link{
+color:#0F0C08 !important;
+font-size: larger;
+font-weight: bold;
+font-style: cursive;
+margin-left:20px;
+}
+.fixed-top1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.custom_header_navlink
+{
+text-decoration: none !important;
+margin-right:1rem !important;
+}
+.custom_header_Link
+{
+color:rgba(0,0,0,.9);
+text-decoration: none !important;
+height:100%;
+text-transform:uppercase;
+position: relative;
+padding: 1rem 1rem;
+}
+
+.custom_header_Link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  position: absolute;
+
+}
+.custom_header_Link:hover
+{
+color:white;
+}
+
+.custom_header_Link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+.custom_header_Link1
+{
+color:white;
+text-decoration: none !important;
+height:100%;
+text-transform:uppercase;
+position: relative;
+padding: 1rem 1rem;
+}
+
+.custom_header_Link1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  position: absolute;
+
+}
+.custom_header_Link1:hover
+{
+color:black;
+}
+
+.custom_header_Link1:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.basic-nav-dropdown:hover .dropdown-menu{
+  display:block !important
+}
+
+@media screen and (max-width: 400px) {
+ .dropdown-menu.show {
+    background: #007bff;
+    border-radius: 10px !important; 
+    max-width: 90%;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+ .on_small_margin_minus_30{
+   margin-left: -30px !important;
+   margin-right: -30px !important;
+}
+
+.brand_margin_right_70px
+{
+margin-right:70px !important;
+}
+
+}
+
+
+
+

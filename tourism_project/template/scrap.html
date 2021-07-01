@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+    <head>
+        <title>scrap page</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    </head>
+    <body>
+        
+        <div class="row">
+            <div class="col-6"><h3 class="text-success text-center">Flipkart</h3></div>
+            <div class="col-6"><h3 class="text-success text-center">Amazon</h3></div>
+        </div>
+        <div class="row">
+            {% for item in data %}
+        <div class="col-6">
+            <table class="table" style="padding-top:50px;">
+                
+                  <tbody >
+                    <tr>
+                        <th scope="col">Name</th>
+                    {% for i in item.title %}
+                    
+                        
+                            <td>{{ i }}</td>
+                        
+                    
+                    {% endfor %}
+                </tr>
+                <tr>
+                      <th scope="col">Price</th>
+                    {% for j in item.price %}
+                    
+                        
+                            <td>{{ j }}</td>
+                        
+                    
+                    {% endfor %}
+                </tr>
+                  </tbody>       
+        </table>
+        </div>
+
+            
+        {% endfor %}
+        <div class="col-6"><h3 class="text-success text-center">Croma</h3></div>
+        </div>
+        
+    </body>
+
+</html>

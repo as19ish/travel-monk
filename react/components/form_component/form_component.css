@@ -1,0 +1,245 @@
+
+.query_form
+{
+padding:5%;
+background: rgba(0, 0, 0, 0.9);
+}
+
+.callback_modal1
+{
+ background: -webkit-gradient( linear, left top, left bottom, from(rgba(35,43,85,0.75)), to(rgba(35,43,85,0.95))), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
+}
+.form_success_msg{
+margin-top:5px;
+font-family: Open Sans, sans-serif;
+text-align:center;
+text-transform:uppercase;
+font-size:14px;
+font-weight:bold;
+}
+/*.fix_{
+position: fixed;
+width:520px;
+height:700px;
+z-index:-1;
+}*/
+.form-control1
+{
+width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.2);
+    border-bottom:white solid .5px;
+    color:white;
+    font-size:1rem;
+}
+legend {
+    text-align:center;
+    font-family:Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+.custom_label
+{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    display: block;
+}
+#_fix{
+
+background:#ffc107;
+height:100%;
+}
+/*
+._height_100
+{
+ height:100% ! important;
+}*/
+
+.callback_button
+{
+float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255,255,255, 1);
+    width: 30%;
+    float:inherit;
+    height:40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 23px;
+    background-color: rgba(16,89,255, 1);
+    left: 0px;
+    top: 0px;
+    -webkit-transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
+    transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
+}
+
+
+
+
+
+
+.container_loading {
+	z-index: 999;
+	height: 2em;
+	width: 15em;
+	overflow: show;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.bar {
+	width: 10px;
+	height: 2px;
+	margin-right: 4px;
+	display: inline-block;
+	background-color: #7B5DED;
+}
+
+.progress {
+	width: 172px;
+	height: 5px;
+	display: block;
+	background-color: #7B5DED;
+	position: relative;
+	top: 10px;
+	animation-name: Progress;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0S;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Progress {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 172px;
+	}
+}
+
+.bar1 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.03s;
+}
+
+.bar2 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.06s;
+}
+
+.bar3 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.09s;
+}
+
+.bar4 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.12s;
+}
+
+.bar5 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.15s;
+}
+
+.bar6 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.18s;
+}
+
+.bar7 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.21s;
+}
+
+.bar8 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.24s;
+}
+
+.bar9 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.27s;
+}
+
+.bar10 {
+	animation-name: Bar;
+	animation-duration: 800ms;
+	animation-timing-function: cubic- bezier(0.54, -0.01, 0.42, 0.99);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+}
+
+@keyframes Bar {
+	0% {
+		background-color: #7B5DED;
+		transform: scaleY(0.5);
+	}
+
+	100% {
+		transform: scaleY(10);
+	}
+}

@@ -1,0 +1,19 @@
+.alert-success7 {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert7 {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.admin_div{
+    margin-top: 1rem;
+    padding: 5rem;
+    border-bottom: 5px solid rgb(255, 204, 3);
+    background-color: rgb(235, 235, 235);
+    }

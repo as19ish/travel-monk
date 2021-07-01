@@ -1,0 +1,160 @@
+.home-faq-wrapper
+{
+margin-bottom: 10px !important;
+    padding: 10px 15px !important;
+ font-weight:600;
+}
+.home-faq-wrapper1 {
+    background-color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px !important;
+    padding: 10px 15px !important;
+    cursor: pointer;
+    /* border: 3px solid #999; */
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.14);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.home-faq-wrapper1>.fa {
+    float: right;
+    line-height: 30px;
+}
+.home-faqs-container {
+    margin: 45px auto;
+}
+.text-left {
+    text-align: left;
+}
+
+.section-bg-grey {
+    background-color: #ebebeb;
+}
+.page-section-arrow, .page-section-arrow-grey {
+    position: relative;
+}
+.page-section {
+    padding: 50px 0;
+}
+.section-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text-center {
+    text-align: center;
+}
+.section
+{
+display:block;
+}
+
+.home-faq-wrapper1:hover, .home-faq-wrapper1:focus {
+	 transform: scale3d(1.005,1.005,1.005) !important;
+}
+ .home-faq-wrapper1:hover::after, .home-faq-wrapper1:focus::after {
+	 opacity: 1;
+}
+
+.modal_cross_sign_white .close
+{
+color:white;
+opacity:1;
+}
+
+
+@media screen and (min-width: 900px)
+{
+.container_max_width {
+    max-width: 1250px;
+}
+.index_3000{
+z-index: 0;
+}
+}
+
+
+@media screen and (max-width: 800px)
+{
+.custom_header_navlink
+{
+ margin:0 !important;
+}
+
+.home-faq-wrapper1
+{
+font-size:0.8rem;
+}
+.index_3000{
+z-index: 1002;
+}
+}
+
+@media screen and (min-width: 800px)
+{
+.faq_container{
+background:url(https://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+}
+
+/*ribon*/
+
+/* common */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid rgb(69, 141, 0);
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: rgb(69, 141, 0);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 16px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+} 
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
