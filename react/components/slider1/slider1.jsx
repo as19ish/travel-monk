@@ -30,7 +30,7 @@ class ControlledCarousel extends React.Component {
 
   componentDidMount(){
 
-    axios.get('http://localhost:8000/delete_slider_image/',)
+    axios.get('/delete_slider_image/',)
               .then(res => {                
                 this.setState({data: res.data.result});
               })

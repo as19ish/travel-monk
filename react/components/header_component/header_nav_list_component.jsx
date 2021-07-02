@@ -19,7 +19,7 @@ componentDidMount()
 {
 
 
-axios.get('http://localhost:8000/view_season_category_all/')
+axios.get('/view_season_category_all/')
       .then(res => {        
         this.setState({season: res.data.season,category: res.data.category})
       })

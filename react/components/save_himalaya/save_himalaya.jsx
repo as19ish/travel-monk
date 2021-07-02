@@ -119,7 +119,7 @@ class Tab2 extends React.Component {
 						  let Give_Traning_of_Soft_Skills_To_Villagers_Child=[];
 						  let Enthusiastic_About_Green_Himalayas=[];
 						  let Himalayan_Research=[];
-axios.get('http://localhost:8000/view_event_article_ALL/')
+axios.get('/view_event_article_ALL/')
       .then(res => {
         for(let x=0;x<res.data.event_data.length;x++)
             {

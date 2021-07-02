@@ -55,7 +55,7 @@ class Delete_Day_plan extends React.Component {
     const data={track_info:this.state.track_selected}
     axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/delete_day_plan/',
+                                url: '/delete_day_plan/',
                                 data:data
                                 })
                                 .then(response=> {
@@ -138,7 +138,7 @@ class Day_plan extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -147,7 +147,7 @@ class Day_plan extends React.Component {
   componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -218,7 +218,7 @@ const data={track_info:this.state.track_selected, day_plan:filteredValues}
 
 axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_day_plan/',
+                                url: '/submit_day_plan/',
                                 data:data
                                 })
                                 .then(response=> {

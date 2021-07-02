@@ -43,7 +43,7 @@ constructor(props) {
 componentDidMount()
 {
 document.getElementById('call_back_fixed_button_id').style.display='block'
-axios.get('http://localhost:8000/view_reviews/')
+axios.get('/view_reviews/')
       .then(res => {
         this.setState(res.data)
       })

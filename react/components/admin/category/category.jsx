@@ -85,7 +85,7 @@ class Category_table extends React.Component {
 
  axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_category/',
+                                url: '/update_category/',
                                 data:{id:id,name:name,description:desc}
                                 })
                                 .then(response=> {
@@ -101,7 +101,7 @@ class Category_table extends React.Component {
 
                                         });
                                     }, 4000);
-                                           axios({method: 'get',url: 'http://localhost:8000/get_category/'}).then(response=> {
+                                           axios({method: 'get',url: '/get_category/'}).then(response=> {
                                                             //handle success
 
                                                             
@@ -183,7 +183,7 @@ class CategoryForm extends React.Component {
   componentDidMount()
   {
 
-  axios({method: 'get',url: 'http://localhost:8000/get_category/'}).then(response=> {
+  axios({method: 'get',url: '/get_category/'}).then(response=> {
                                     //handle success
 
                                     
@@ -203,7 +203,7 @@ class CategoryForm extends React.Component {
  {
    
    let api_data=[]
-   axios({method: 'get',url: 'http://localhost:8000/get_category/'}).then(response=> {
+   axios({method: 'get',url: '/get_category/'}).then(response=> {
                                     //handle success
 
                                     
@@ -278,7 +278,7 @@ let data={}
                                     
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/add_category/',
+                                url: '/add_category/',
                                 data:data
                                 })
                                 .then(response=> {

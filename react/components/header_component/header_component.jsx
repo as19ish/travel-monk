@@ -21,7 +21,7 @@ class HeaderComponent extends Component {
 				<div className='search_hide'>
 				 <Search/>  
 				 </div>
-                    <a href="http://localhost:8000/" style={{textDecoration:'none'}}>					      
+                    <a href="/" style={{textDecoration:'none'}}>					      
 						 <Image className='head_image' src="/static/media/fa-home.png" roundedCircle thumbnail />
 				    </a>&nbsp;&nbsp;&nbsp;
 					 <Link to="/save_himalaya"><Image className='head_image' src="/static/media/fa_himalaya.jpg" roundedCircle thumbnail />

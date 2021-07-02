@@ -14,7 +14,7 @@ class BlogDelete extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_blog_id_title/')
+        axios.get('/get_blog_id_title/')
               .then(res => {
                 
                 this.setState({blogs:res.data.result})
@@ -24,7 +24,7 @@ class BlogDelete extends React.Component {
  componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_blog_id_title/')
+     axios.get('/get_blog_id_title/')
               .then(res => {
                 
                 
@@ -45,7 +45,7 @@ class BlogDelete extends React.Component {
   const data=x
             axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/delete_blog/',
+                                url: '/delete_blog/',
                                 data:data
                                 })
                                 .then(response=> {
@@ -59,7 +59,7 @@ class BlogDelete extends React.Component {
 
                                         });
                                     }, 2000);
-                                                     axios.get('http://localhost:8000/get_blog_id_title/').then(res => {
+                                                     axios.get('/get_blog_id_title/').then(res => {
                                                         
                                                         this.setState({blogs:res.data.result,blog_selected:[]})
                                                       })
@@ -157,7 +157,7 @@ class Blog extends React.Component {
 
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/add_blog/',
+                                url: '/add_blog/',
                                 data:data
                                 })
                                 .then(response=> {

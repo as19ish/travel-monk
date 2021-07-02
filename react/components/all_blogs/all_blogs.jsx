@@ -97,7 +97,7 @@ componentDidMount()
 {
 document.getElementById('call_back_fixed_button_id').style.display='block'
 
-axios.get('http://localhost:8000/view_blogs_ALL/'/*{params:{gender:getState().gender.gender_selected,item:getState().show.item_selected}}*/)
+axios.get('/view_blogs_ALL/'/*{params:{gender:getState().gender.gender_selected,item:getState().show.item_selected}}*/)
       .then(res => {
         
         this.setState({blogs: res.data.blogs})

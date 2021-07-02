@@ -27,7 +27,7 @@ class Trekker_story_form extends React.Component {
   }
   componentDidMount()
   {
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                        this.setState({track_details:res.data.result})
               })
@@ -153,7 +153,7 @@ let data = new FormData();
 
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_trekker_story/',
+                                url: '/submit_trekker_story/',
                                 data:data
                                 })
                                 .then(response=> {

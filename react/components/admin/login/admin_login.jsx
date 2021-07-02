@@ -27,7 +27,7 @@ let flag=false
 
     axios({
     method: 'post',
-    url: 'http://localhost:8000/admin_verification/',
+    url: '/admin_verification/',
     data: data,
     })
     .then(response =>{

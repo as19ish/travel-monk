@@ -18,7 +18,7 @@ constructor(props) {
 
 refresh()
 {
-        axios.get('http://localhost:8000/view_reviews_all/')
+        axios.get('/view_reviews_all/')
               .then(res => {
                 this.setState(res.data)
               })
@@ -28,7 +28,7 @@ update(photo,id,data)
 {
               axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_reviews/',
+                                url: '/update_reviews/',
                                 data:{id:id,photo:photo,action:data}
                                 }).then(res => {
                                                 this.setState(res.data)
@@ -38,7 +38,7 @@ update(photo,id,data)
 componentDidMount()
 {
 
-axios.get('http://localhost:8000/view_reviews_all/')
+axios.get('/view_reviews_all/')
       .then(res => {
 
         this.setState(res.data)

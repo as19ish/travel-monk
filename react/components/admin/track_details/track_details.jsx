@@ -18,7 +18,7 @@ class Update_track extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -27,7 +27,7 @@ class Update_track extends React.Component {
    componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -48,7 +48,7 @@ class Update_track extends React.Component {
  {
  
 
-   axios.get('http://localhost:8000/get_track_info/',{params:{track_id:x['id']}})
+   axios.get('/get_track_info/',{params:{track_id:x['id']}})
               .then(res => {
                 
                 this.setState({form_data:res.data.result,track_selected:[x]})
@@ -69,7 +69,7 @@ class Update_track extends React.Component {
 const data={track_info:this.state.form_data}
             axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_track/',
+                                url: '/update_track/',
                                 data:data
                                 })
                                 .then(response=> {
@@ -84,7 +84,7 @@ const data={track_info:this.state.form_data}
                                         });
                                     }, 2000);
 
-                                      axios.get('http://localhost:8000/get_track_id_name/')
+                                      axios.get('/get_track_id_name/')
                                       .then(res => {
                                                     
                                                     this.setState({track_details:res.data.result,form_data:{},track_selected:[]})
@@ -224,7 +224,7 @@ let data={}
                                     
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_trek_info/',
+                                url: '/submit_trek_info/',
                                 data:data
                                 })
                                 .then(response=> {

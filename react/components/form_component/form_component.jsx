@@ -112,7 +112,7 @@ let data={}
                                     
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/enquiry/',
+                                url: '/enquiry/',
                                 data:data
                                 })
                                 .then(response=> {

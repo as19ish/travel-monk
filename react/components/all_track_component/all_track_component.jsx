@@ -46,7 +46,7 @@ this.setState({loading:true})
 
 let parameters = queryString.parse(this.props.location.search);  // using npm- queryString package.. getting the route parameters.
 //type can be All OR Season OR Category....type is used to decide the table to filter and sub_type for column
-axios.get('http://localhost:8000/view_tracks_ALL/',{params:parameters})
+axios.get('/view_tracks_ALL/',{params:parameters})
       .then(res => {
         
         let map = new Map();

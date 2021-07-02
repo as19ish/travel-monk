@@ -76,7 +76,7 @@ let history = useHistory();
                                 event.stopPropagation();
 								setLoading(true)              
                                 /*changeState([],'response')*/
-                                axios.get('http://localhost:8000/search/',{params:{search_key:State.data}})
+                                axios.get('/search/',{params:{search_key:State.data}})
                                 .then(res => {
                                 setLoading(false)
                                 changeState(res.data,'response')

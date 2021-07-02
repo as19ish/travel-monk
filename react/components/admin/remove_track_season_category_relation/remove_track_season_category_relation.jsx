@@ -55,7 +55,7 @@ class Remove_relation extends React.Component {
  select_track(x)
  {
  
-   axios.get('http://localhost:8000/get_category_season_using_track_id/',{params:{track_id:x[0]['id']}})
+   axios.get('/get_category_season_using_track_id/',{params:{track_id:x[0]['id']}})
               .then(res => {
                
                 this.setState({category_list:res.data.category_list,
@@ -118,7 +118,7 @@ remove(flag)
 this.setState({loading:true})
   axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/remove_track_category_season_relation/',
+                                url: '/remove_track_category_season_relation/',
                                 data:{track_selected:this.state.track_selected,type:type,data:data}
                                 })
                                 .then(response=> {

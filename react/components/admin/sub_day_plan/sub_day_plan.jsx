@@ -15,7 +15,7 @@ class Sub_day_plan extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -24,7 +24,7 @@ class Sub_day_plan extends React.Component {
   componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -60,7 +60,7 @@ class Sub_day_plan extends React.Component {
  {
  
 
-   axios.get('http://localhost:8000/get_days_using_track_id/',{params:{track_id:x[0]['id']}})
+   axios.get('/get_days_using_track_id/',{params:{track_id:x[0]['id']}})
               .then(res => {
                 
                 this.setState({track_days:res.data.result,track_selected:x})
@@ -108,7 +108,7 @@ const data={track_day_selected:this.state.track_day_selected, sub_day_plan:filte
 
 axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_sub_day_plan/',
+                                url: '/submit_sub_day_plan/',
                                 data:data
                                 })
                                 .then(response=> {

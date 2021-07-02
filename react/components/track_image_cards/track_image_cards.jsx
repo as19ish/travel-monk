@@ -41,7 +41,7 @@ componentDidMount()
 document.getElementById('call_back_fixed_button_id').style.display='block'
 
 
-axios.get('http://localhost:8000/view_tracks/')
+axios.get('/view_tracks/')
       .then(res => { 
         
         this.setState({track: res.data.track,track_media: res.data.track_media,track1: res.data.track1,track_media1: res.data.track_media1})

@@ -14,7 +14,7 @@ class Inquery extends React.Component {
 refresh()
 {
  
-        axios.get('http://localhost:8000/get_inquery/')
+        axios.get('/get_inquery/')
               .then(res => {
                 
                 this.setState({inquery:res.data.result})
@@ -28,14 +28,14 @@ refresh()
   let data={'id':id}
   axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/clear_inquiry/',
+                                url: '/clear_inquiry/',
                                 data:data
                                 })
                                 .then(response=> {
                                     //handle success
                                     
 
-                                    axios.get('http://localhost:8000/get_inquery/').then(res => {
+                                    axios.get('/get_inquery/').then(res => {
                                                                 
                                                                 this.setState({inquery:res.data.result})
                                                               })
@@ -49,7 +49,7 @@ refresh()
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_inquery/')
+        axios.get('/get_inquery/')
               .then(res => {
                 
                 this.setState({inquery:res.data.result})

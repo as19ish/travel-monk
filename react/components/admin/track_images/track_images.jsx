@@ -14,7 +14,7 @@ class ImageDelete extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -25,7 +25,7 @@ class ImageDelete extends React.Component {
  componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -62,7 +62,7 @@ class ImageDelete extends React.Component {
 
  
 
-   axios.get('http://localhost:8000/delete_track_image/',{params:{track_id:x[0]['id']}})
+   axios.get('/delete_track_image/',{params:{track_id:x[0]['id']}})
               .then(res => {
                 
                 this.setState({images:res.data.result,track_selected:x})
@@ -76,7 +76,7 @@ onClickDeleteButton(index) {
 const data=index
             axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/delete_track_image/',
+                                url: '/delete_track_image/',
                                 data:data
                                 })
                                 .then(response=> {
@@ -91,7 +91,7 @@ const data=index
                                         });
                                     }, 2000);
 
-                                      axios.get('http://localhost:8000/get_track_id_name/')
+                                      axios.get('/get_track_id_name/')
                                       .then(res => {
                                                     
                                                     this.setState({track_details:res.data.result,images:[],track_selected:[]})
@@ -178,7 +178,7 @@ class ImageUpload extends React.Component {
   componentDidMount()
   {
     
-        axios.get('http://localhost:8000/get_track_id_name/')
+        axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -189,7 +189,7 @@ class ImageUpload extends React.Component {
   componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -249,7 +249,7 @@ class ImageUpload extends React.Component {
 
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_trek_image/',
+                                url: '/submit_trek_image/',
                                 data:data
                                 })
                                 .then(response=> {

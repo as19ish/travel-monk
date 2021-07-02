@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'tourism_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'deep_tourism',
-        'USER': 'root',
-        'PASSWORD': 'sourcefuse',
-        'HOST': 'localhost',
+        'NAME': 'monk_db',
+        'USER': 'admin',
+        'PASSWORD': 'QgZrRCgKRHnXSmwkRfUp',
+        'HOST': 'monk-db.cso9p3bva9sf.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
@@ -137,8 +137,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = "/static/"
 import os 
 STATICFILES_DIRS = (
-    "/home/ashish.sharma/Downloads/Copy of tourism_backup/tourism_project/tourism_project/static/",
+    "/home/ubuntu/django/travel-monk/tourism_project/static/",
 )
+
 
 MEDIA_URL='media/'
 #MEDIA_URL from where to fetch to website page

@@ -25,7 +25,7 @@ class ImageDelete extends React.Component {
   refresh(x)
  {
 
-   axios.get('http://localhost:8000/delete_slider_image/',)
+   axios.get('/delete_slider_image/',)
               .then(res => {                
                 this.setState({data:res.data.result})
               })
@@ -36,7 +36,7 @@ onClickDeleteButton(index) {
 const data=index
             axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/delete_slider_image/',
+                                url: '/delete_slider_image/',
                                 data:data
                                 })
                                 .then(response=> {
@@ -51,7 +51,7 @@ const data=index
                                         });
                                     }, 2000);
 
-                                    axios.get('http://localhost:8000/delete_slider_image/',)
+                                    axios.get('/delete_slider_image/',)
                                     .then(res => {                
                                       this.setState({data:res.data.result})
                                     })
@@ -148,7 +148,7 @@ class ImageUpload extends React.Component {
 
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_slider_image/',
+                                url: '/submit_slider_image/',
                                 data:data
                                 })
                                 .then(response=> {

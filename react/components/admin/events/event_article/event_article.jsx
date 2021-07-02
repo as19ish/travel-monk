@@ -111,7 +111,7 @@ update(id,img1,img2,img3,img4)
         let himalayan_research=[]
               axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/delete_event_article/',
+                                url: '/delete_event_article/',
                                 data:{id:id,img1:img1,img2:img2,img3:img3,img4:img4}
                                 }).then(res => {
                                for(let x=0;x<res.data.event_data.length;x++)
@@ -211,7 +211,7 @@ refresh()
         let give_traning_of_soft_skills_to_villagers_child=[]
         let enthusiastic_about_green_himalayas=[]
         let himalayan_research=[]
-axios.get('http://localhost:8000/view_event_article_ALL/')
+axios.get('/view_event_article_ALL/')
       .then(res => {
         for(let x=0;x<res.data.event_data.length;x++)
             {
@@ -315,7 +315,7 @@ componentDidMount()
         let give_traning_of_soft_skills_to_villagers_child=[]
         let enthusiastic_about_green_himalayas=[]
         let himalayan_research=[]
-axios.get('http://localhost:8000/view_event_article_ALL/')
+axios.get('/view_event_article_ALL/')
       .then(res => {
         for(let x=0;x<res.data.event_data.length;x++)
             {

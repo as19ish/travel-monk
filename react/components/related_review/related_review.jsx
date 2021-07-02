@@ -65,7 +65,7 @@ constructor(props) {
 componentDidMount()
 {
 document.getElementById('call_back_fixed_button_id').style.display='block'
-axios.get('http://localhost:8000/view_related_reviews/',{params: {id:this.props.id}})
+axios.get('/view_related_reviews/',{params: {id:this.props.id}})
       .then(res => {
         this.setState(res.data)
       })

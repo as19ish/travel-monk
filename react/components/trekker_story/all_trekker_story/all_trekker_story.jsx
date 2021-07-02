@@ -88,7 +88,7 @@ constructor(props) {
 componentDidMount()
 {
 document.getElementById('call_back_fixed_button_id').style.display='block'
-axios.get('http://localhost:8000/view_trekker_story/')
+axios.get('/view_trekker_story/')
       .then(res => {
         this.setState(res.data)
       })

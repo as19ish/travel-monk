@@ -27,7 +27,7 @@ class Track_season extends React.Component {
 
   componentDidMount()
   {
-        axios.get('http://localhost:8000/get_track_season_cat_id_name/')
+        axios.get('/get_track_season_cat_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.track,
@@ -38,7 +38,7 @@ class Track_season extends React.Component {
 
    componentDidUpdate()
  {
-     axios.get('http://localhost:8000/get_track_season_cat_id_name/')
+     axios.get('/get_track_season_cat_id_name/')
               .then(res => {
            
                 let track=(this.state.track_details.length!=res.data.track.length)
@@ -99,7 +99,7 @@ class Track_season extends React.Component {
   {
 
  
-        axios.get('http://localhost:8000/get_track_season_cat_id_name/')
+        axios.get('/get_track_season_cat_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.track,
@@ -142,7 +142,7 @@ handleSubmit(event)
                       category_id:this.state.category_selected[0]['id']}
             axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_track_season_cat_relation/',
+                                url: '/update_track_season_cat_relation/',
                                 data:data
                                 })
                                 .then(response=> {

@@ -30,7 +30,7 @@ console.log(this.props.location.pathname);
 let path = this.props.location.pathname;
 path = path.slice(14,path.length);
 console.log(path);
-axios.get('http://localhost:8000/direct_track_detail/',{params:{name:path}})
+axios.get('/direct_track_detail/',{params:{name:path}})
       .then(res => {
         console.log('res = ',res);
         let data = res.data;

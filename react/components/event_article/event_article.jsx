@@ -112,7 +112,7 @@ componentDidMount()
         let info=[]
         let article=[]
         let other=[]
-axios.get('http://localhost:8000/view_event_article_ALL/')
+axios.get('/view_event_article_ALL/')
       .then(res => {
         for(let x=0;x<res.data.event_data.length;x++)
             {

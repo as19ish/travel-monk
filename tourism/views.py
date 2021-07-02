@@ -228,7 +228,7 @@ def send_sms(name, mobile, email, destination):
     admin_mobile = '6399896494'
     admin_mobile1= '9557115706'
     message_admin = 'Enquiry Received:' + '\\n' + 'Name: ' + name.upper() + '\\n' + 'Mobile: ' + mobile + '\\n' + 'Email: ' + email + '\\n' + 'Trek: ' + destination.upper()
-    message_user = 'Hi, ' + name.upper() + '\\n' + 'Welcome To Hike2Heaven' + '\\n' + 'Your request for ' + destination.upper() + ' received. We will get back to you shortly.' + '\\n' + 'Enjoy Trekking @ http://localhost:8000/'
+    message_user = 'Hi, ' + name.upper() + '\\n' + 'Welcome To Hike2Heaven' + '\\n' + 'Your request for ' + destination.upper() + ' received. We will get back to you shortly.' + '\\n' + 'Enjoy Trekking @ /'
     try:
         conn = ht.HTTPSConnection("api.msg91.com")
         payload = '''{"sender": "MROVER","route": "4","country": "91","sms": [{  "message": "''' + message_user + ''' ","to": ["''' + mobile + '''"]}]}'''

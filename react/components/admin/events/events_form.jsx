@@ -51,7 +51,7 @@ class Event_form extends React.Component {
   }
   componentDidMount()
   {
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 this.setState({track_details:res.data.result})
@@ -61,7 +61,7 @@ class Event_form extends React.Component {
    componentDidUpdate()
  {
    
-     axios.get('http://localhost:8000/get_track_id_name/')
+     axios.get('/get_track_id_name/')
               .then(res => {
                 
                 
@@ -148,7 +148,7 @@ let data = new FormData();
 
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/submit_event_article/',
+                                url: '/submit_event_article/',
                                 data:data
                                 })
                                 .then(response=> {

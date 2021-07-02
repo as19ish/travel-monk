@@ -84,7 +84,7 @@ class Season_table extends React.Component {
 
  axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_season/',
+                                url: '/update_season/',
                                 data:{id:id,name:name,description:desc}
                                 })
                                 .then(response=> {
@@ -100,7 +100,7 @@ class Season_table extends React.Component {
 
                                         });
                                     }, 4000);
-                                           axios({method: 'get',url: 'http://localhost:8000/get_season/'}).then(response=> {
+                                           axios({method: 'get',url: '/get_season/'}).then(response=> {
                                                             //handle success
 
                                                             
@@ -185,7 +185,7 @@ class SeasonForm extends React.Component {
   componentDidMount()
   {
 
-  axios({method: 'get',url: 'http://localhost:8000/get_season/'}).then(response=> {
+  axios({method: 'get',url: '/get_season/'}).then(response=> {
                                     //handle success
 
                                     
@@ -205,7 +205,7 @@ class SeasonForm extends React.Component {
  {
    
    let api_data=[]
-   axios({method: 'get',url: 'http://localhost:8000/get_season/'}).then(response=> {
+   axios({method: 'get',url: '/get_season/'}).then(response=> {
                                     //handle success
 
                                     
@@ -279,7 +279,7 @@ let data={}
                                     
      axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/add_season/',
+                                url: '/add_season/',
                                 data:data
                                 })
                                 .then(response=> {

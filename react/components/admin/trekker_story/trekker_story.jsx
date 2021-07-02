@@ -18,7 +18,7 @@ constructor(props) {
 
 refresh()
 {
-        axios.get('http://localhost:8000/view_trekker_story_all/')
+        axios.get('/view_trekker_story_all/')
               .then(res => {
                 this.setState(res.data)
               })
@@ -28,7 +28,7 @@ update(profile_photo,trek_photo,id,data)
 {
               axios({
                                 method: 'post',
-                                url: 'http://localhost:8000/update_trekker_story/',
+                                url: '/update_trekker_story/',
                                 data:{id:id,profile_photo:profile_photo,trek_photo:trek_photo,action:data}
                                 }).then(res => {
                                                 this.setState(res.data)
@@ -38,7 +38,7 @@ update(profile_photo,trek_photo,id,data)
 componentDidMount()
 {
 
-axios.get('http://localhost:8000/view_trekker_story_all/')
+axios.get('/view_trekker_story_all/')
       .then(res => {
 
         this.setState(res.data)

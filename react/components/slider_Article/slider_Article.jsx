@@ -48,7 +48,7 @@ constructor(props) {
 componentDidMount()
 {
 
-axios.get('http://localhost:8000/view_posts/')
+axios.get('/view_posts/')
       .then(res => {
         
         this.setState(res.data)
