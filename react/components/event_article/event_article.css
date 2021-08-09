@@ -108,6 +108,17 @@ a {
     border-color: #ffc107;
 
 }
+
+.card-box-b{
+	height: 230px;
+	box-shadow: 2px 2px 8px #e2e2e2;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+
+.card-box-b:hover{
+	cursor: pointer;
+}
  
 .event_heading{
 font-size: 32px;

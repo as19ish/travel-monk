@@ -98,15 +98,15 @@ for(let i=0;i<track_media_length1;i++ )
                     },
                 
                     600: {
-                      items: 4
+                      items: 3
                     },
                 
                     1024: {
-                      items: 4
+                      items: 3
                     },
                 
                     1366: {
-                      items: 4
+                      items: 3
                     }
                   }
                 };
@@ -150,7 +150,7 @@ for(let i=0;i<track_media_length1;i++ )
     <div>
     {items.length>0?<section id="portfolio" className="section-bg">
       <div className="container" data-aos="fade-up">
-        <header className="section-header" style={{paddingBottom:'0px'}}>
+        <header className="section-header" style={{paddingBottom:'20px'}}>
           <h3 className="section-title">Latest Trek</h3>
         </header>
         <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -163,8 +163,8 @@ for(let i=0;i<track_media_length1;i++ )
           </div>            
         </div>
       </div>
-      <div style={{marginTop:'0px',textAlign:'center'}}>
-      <a href="/all_tracks?type=all&sub_type=all" className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</a>
+      <div style={{marginTop:'20px',textAlign:'center'}}>
+      <a href="/all_tracks?type=all&sub_type=all"><button className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</button></a>
       </div>
       </section>:null}
 
@@ -184,7 +184,7 @@ for(let i=0;i<track_media_length1;i++ )
 
     {items1.length>0?<section id="portfolio" className="section-bg">
       <div className="container" data-aos="fade-up">
-        <header className="section-header" style={{paddingBottom:'0px'}}>
+        <header className="section-header" style={{paddingBottom:'30px'}}>
           <h3 className="section-title">Trek of this month</h3>
         </header>
         <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -197,8 +197,8 @@ for(let i=0;i<track_media_length1;i++ )
             </div>            
         </div>
       </div>
-      <div style={{marginTop:'0px',textAlign:'center'}}>
-      <a href="/all_tracks?type=all&sub_type=all" className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</a>
+      <div style={{marginTop:'20px',textAlign:'center'}}>
+      <a href="/all_tracks?type=all&sub_type=all"><button className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</button></a>
       </div>
       
       </section>:null}

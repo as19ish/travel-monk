@@ -10,7 +10,7 @@ module.exports = {
         ],
 
   output: {
-    path: path.resolve('/home/shc/travel-monk/tourism_project/static/bundles'),
+    path: path.resolve('/home/ubuntu/django/travel-monk/tourism_project/static/bundles'),
       filename: "[name]-[hash].js",
       publicPath: '/static/bundles/', 
   },
@@ -33,7 +33,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx', '.css']
   }
 
 };

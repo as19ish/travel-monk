@@ -23,6 +23,8 @@ width: 100% !important;
 }
 
 
+
+
 .effect5
 {
   position: relative;
@@ -108,7 +110,8 @@ padding: 10px !important;
     font-family: fantasy;
     }
 .track_detail_form_container {
-padding-right:15px;
-padding-left:15px;
-background: -webkit-gradient( linear, left top, left bottom, from(#ffc107), to(rgba(132, 122, 57, 0.95))), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
+padding: 1em;
+background: #fff;
+box-shadow: 2px 2px 8px #e2e2e2;
+border-radius: 5px;
 }

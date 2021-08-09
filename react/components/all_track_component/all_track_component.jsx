@@ -283,7 +283,7 @@ let items=[]
                    return <div className={cls} style={style_obj}>
                              <div className="carousel-container">
                                <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">WELCOME TO <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;{params.sub_type.toUpperCase()}</span></h2>
+                  <h2 className="animate__animated animate__fadeInDown">{params.sub_type.toUpperCase()}</h2>
                   {/* <p className="animate__animated animate__fadeInUp">{this.state.description}</p> */}
                                  {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                                  {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
@@ -320,7 +320,7 @@ this.props.location.state.sub_type!='all'?<Container fluid>
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -328,7 +328,7 @@ this.props.location.state.sub_type!='all'?<Container fluid>
                          <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
-                         </a>
+                         </a> */}
                  
                        </div>
                      </div>

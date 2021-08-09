@@ -109,14 +109,14 @@ axios.get('/view_posts/')
                   src={"/static/media/"+variant.blog_image} />
           </div>
           <div className="card-overlay">
-            <div className="card-header-b">
+            <div className="card-header-b h-card-head">
               <div className="card-category-b">
                 <a href="#" className="category-b">News</a>
               </div>
               <div className="card-title-b">
-                <h2 className="title-2">
+                <p className="title-2">
                   <a href="blog-single.html">{variant.blog_title}</a>
-                </h2>
+                </p>
               </div>
               <div className="card-date">
                 <span className="date-b">18 Sep. 2020</span>
@@ -134,7 +134,7 @@ return(
 
 <section className="" id="testimonials">
   <div className="container" data-aos="fade-up">
-  <div className="section-header">
+  <div className="section-header mb-40">
         <h3>Latest Updates</h3>
       </div>
       {cards.length>0?<OwlCarousel

@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'tourism_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'travel_monk',
-        'USER': 'root',
-        'PASSWORD': 'qazplm',
-        'HOST': 'localhost',
+        'NAME': 'monk_db',
+        'USER': 'admin',
+        'PASSWORD': 'QgZrRCgKRHnXSmwkRfUp',
+        'HOST': 'monk-db.cso9p3bva9sf.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = "/static/"
 import os 
 STATICFILES_DIRS = (
-    "/home/shc/travel-monk/tourism_project/static/",
+    "/home/ubuntu/django/travel-monk/tourism_project/static/",
 )
 
 

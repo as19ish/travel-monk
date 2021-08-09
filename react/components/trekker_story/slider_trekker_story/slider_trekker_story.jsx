@@ -106,23 +106,24 @@ axios.get('/view_trekker_story_4/')
               alt='...'
               src={"/static/media/"+variant.trek_photo} // use normal <img> attributes as props
               width='100%'
-              height='200px' />
+              height='150px' />
+              <div className="trainer">
+                <div className="trainer-profile">                {/* <img src={"/static/media/"+variant.profile_photo} className="img-fluid" alt=""/> */}
+                  <LazyLoadImage
+                  className="img-fluid"
+                  alt='trekker-img'
+                  src={"/static/media/"+variant.profile_photo} />
+                  
+                  
+                </div>
+              </div>
             <div className="course-content">
-              <div className="d-flex justify-content-between align-items-center mb-3">
+            <span>{variant.name}</span>
+              <div className="mb-3">
                 <h4>{variant.trek_name}</h4>
               </div>
               <p style={{marginBottom:'0'}}>{variant.description.substring(0, 120).concat('.... ')}</p>
-              <div className="trainer d-flex justify-content-between align-items-center">
-                <div className="trainer-profile d-flex align-items-center">
-                  {/* <img src={"/static/media/"+variant.profile_photo} className="img-fluid" alt=""/> */}
-                  <LazyLoadImage
-                  className="img-fluid"
-                  alt='...'
-                  src={"/static/media/"+variant.profile_photo} />
-                  
-                  <span>{variant.name}</span>
-                </div>
-              </div>
+              
             </div>
           </div>
           </div>
@@ -139,6 +140,7 @@ return(
         <h3>Trekker stories</h3>
       </div>
 
+      <div className="mt-40">
       {cards.length>0?<div className="row" data-aos="zoom-in" data-aos-delay="100">
       <OwlCarousel
             className="owl-theme"
@@ -146,7 +148,7 @@ return(
               {cards}
             </OwlCarousel>
       </div>:null}
-      
+      </div>
 
     </div>
     <div style={{marginTop:'10px',textAlign:'center'}}>

@@ -15,7 +15,7 @@ constructor(props) {
 
     return (
 	 
-	<footer>
+	<div className="s-media">
 				<div className="rounded-social-buttons">
 					<a className="social-button phone" href="tel:+919756245146" target="_blank"><i className="fas fa-phone"></i></a>
 					<a className="social-button whatsapp" href="https://wa.me/919756245146" target="_blank"><i className="fab fa-whatsapp"></i></a>
@@ -25,7 +25,7 @@ constructor(props) {
                     
                
 				</div>
-	</footer>
+	</div>
           
         );
   }

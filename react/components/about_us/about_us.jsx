@@ -44,7 +44,7 @@ let width = '100%';
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -53,7 +53,7 @@ let width = '100%';
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
                          </a>
-                 
+                  */}
                        </div>
                      </div>
                    </section>
@@ -61,7 +61,7 @@ let width = '100%';
 			<Container className='border_bottom' style={{background:'#f8f9fa',padding:'1%'}}>
 			 <Row>
     <Col style={{textAlign:'center'}}>
-    <h1 style={{textAlign:'center',fontWeight:'bold'}}>Our story</h1>  
+    <h1 style={{textAlign:'center',marginTop:"30px",marginBottom:"30px",fontWeight:'bold'}}>Our story</h1>  
     </Col>
     </Row>
   <Row>
@@ -88,11 +88,11 @@ let width = '100%';
 <Container className='border_bottom' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'center'}}>
-    <h1 style={{textAlign:'center',fontWeight:'bold'}}>Core team members</h1>  
+    <h1 style={{textAlign:'center',marginTop:"30px",marginBottom:"30px",fontWeight:'bold'}}>Core team members</h1>  
     </Col>
     </Row>
 
-    <Row style={{marginTop:'80px'}}>
+    <Row style={{marginTop:'50px'}}>
 	
 	<Col style={{textAlign:'center'}} md={4} lg={4}>
     <Image style={{height:'200px',width:'200px'}} src="/static/media/extra_slider/img4.jpg" roundedCircle thumbnail />
@@ -174,7 +174,8 @@ let width = '100%';
 	<Col>
 	<p className="text-muted " style={{margin:'0px'}}>	
 	
-	<h4>Team and facilities</h4>
+  <div style={{marginTop:"30px",marginBottom:"30px"}}><h4>Team and facilities</h4></div>
+	
 	
 	Team: Besides Trek Leaders, every batch has sufficient support staff including local guides, cooks and helpers .
 	<br/>
@@ -191,6 +192,7 @@ let width = '100%';
 	<br/>
 	Accommodation: In comfortable guesthouses at base camps or in high quality tents on twin sharing basis.
 		</p>
+    <br />
 		</Col>
 		
 	  </Row>
@@ -199,11 +201,11 @@ let width = '100%';
 <Container className='border_bottom' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'center'}}>
-    <h1 style={{textAlign:'center',fontWeight:'bold'}}>Founders</h1>  
+    <h1 style={{textAlign:'center',marginTop:"30px",marginBottom:"30px",fontWeight:'bold'}}>Founders</h1>  
     </Col>
     </Row>
 
-    <Row style={{marginTop:'80px'}}>
+    <Row style={{marginTop:'50px'}}>
 	
 	<Col style={{textAlign:'center'}} md={6} lg={6}>
     <Image style={{height:'200px',width:'200px'}} src="/static/media/extra_slider/deepak_new.jpg" roundedCircle thumbnail />

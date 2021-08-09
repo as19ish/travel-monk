@@ -1,69 +1,19 @@
 
 .query_form
 {
-padding:5%;
-background: rgba(0, 0, 0, 0.9);
+color: #191919;
 }
 
-.callback_modal1
-{
- background: -webkit-gradient( linear, left top, left bottom, from(rgba(35,43,85,0.75)), to(rgba(35,43,85,0.95))), url(https://dl.dropboxusercontent.com/u/22006283/preview/codepen/clouds-cloudy-forest-mountain.jpg) no-repeat center center;
-}
 .form_success_msg{
 margin-top:5px;
-font-family: Open Sans, sans-serif;
 text-align:center;
 text-transform:uppercase;
 font-size:14px;
 font-weight:bold;
 }
-/*.fix_{
-position: fixed;
-width:520px;
-height:700px;
-z-index:-1;
-}*/
-.form-control1
-{
-width: 100%;
-    height: 40px;
-    padding-left: 15px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,.2);
-    border-bottom:white solid .5px;
-    color:white;
-    font-size:1rem;
-}
-legend {
-    text-align:center;
-    font-family:Georgia, "Times New Roman", serif;
-    font-weight: bold;
-}
-.custom_label
-{
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    display: block;
-}
-#_fix{
-
-background:#ffc107;
-height:100%;
-}
-/*
-._height_100
-{
- height:100% ! important;
-}*/
 
 .callback_button
 {
-float: left;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 15px;
@@ -74,12 +24,21 @@ float: left;
     height:40px;
     border: none;
     border-radius: 20px;
-    margin-top: 23px;
-    background-color: rgba(16,89,255, 1);
+    background-color: #18d26e;
     left: 0px;
     top: 0px;
     -webkit-transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
     transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
+}
+
+.callback_button:hover{
+	background: #191919;
+}
+
+@media(max-width: 500px){
+	.callback_button{
+		width: 100%;
+	}
 }
 
 

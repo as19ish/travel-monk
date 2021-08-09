@@ -5,7 +5,8 @@ import $ from 'jquery';
 import axios from 'axios'
 import { Link} from 'react-router-dom'
 import Search from '../search_component/search'
-import Info from'../info/info';
+//import Info from'../info/info';
+import Logo from '../../../tourism_project/static/assets/img/h2h-logo.png';
 //main component....................
 
 
@@ -80,28 +81,29 @@ for(let i=0;i<category_length;i++ )
 <header id="header" className="fixed-top header-transparent">
       <div className="container-fluid padding-left-0">
 
-      <div className="row justify-content-center">
-        <div className="col-xl-11 d-flex align-items-center">          
-          <div className='head-toolbar-1'>
+      <div className="row">
+        <div className="d-flex justify-con">          
+          
           <div className="logo">
-            <h1 className="text-light"><a><span>Hike2Heaven</span></a></h1>
+            <Link to="/"><img src={Logo} alt="hike2heaven-logo"/></Link>
           </div>
-          </div>
-          <nav className="nav-menu d-none d-lg-block">
+        
+          <nav className="nav-menu d-lg-block">
             <ul>
-              <li className="active"><a><Link to="/home">Home</Link></a></li>
-			  <li className="drop-down"><a href="#">Latest+Blogs</a>
+              
+			  <li className="drop-down"><a href="#">Latests</a>
                 <ul>
-                  <li><a href="#"><Link to={{pathname: '/event_article'}}>Article</Link></a></li>
-                  <li><a href="#"><Link to={{pathname: '/latest_updates'}}>Latest Update</Link></a></li>
-				  <li><a href="#"><Link to={{pathname: '/save_himalaya'}}>Social Perspective</Link></a></li>
-				  <li><a href="#"><Link to={{pathname: '/all_trekker_stories'}}>Trekker Story</Link></a></li>
-				  <li><a href="#"><Link to={{pathname: '/all_reviews'}}>Reviews</Link></a></li>
+                  <li><Link to={{pathname: '/event_article'}}>Article</Link></li>
+                  <li><Link to={{pathname: '/latest_updates'}}>Latest Update</Link></li>
+				  <li><Link to={{pathname: '/save_himalaya'}}>Social Perspective</Link></li>
+				  <li><Link to={{pathname: '/all_trekker_stories'}}>Trekker Story</Link></li>
+				  <li><Link to={{pathname: '/all_reviews'}}>Reviews</Link></li>
                 </ul>
               </li>
-              <li><a href="/all_tracks?type=all&sub_type=all">All Treks</a></li>
-			  <li className="drop-down"><a href="#">Seasonal Treks</a>
+              
+			  <li className="drop-down"><a href="#">Treks</a>
                 <ul>
+                <li><a href="/all_tracks?type=all&sub_type=all">All Treks</a></li>
                   {season_item}
                 </ul>
               </li>		
@@ -140,18 +142,15 @@ for(let i=0;i<category_length;i++ )
               </li>
             </ul>
           </nav>
-          <div className='head-toolbar-2'>
+          {/* <div className='head-toolbar-2'>
           <div className='l-display-none'>
             <Search/>
             <Link to="/home" id='logo'><h1 style={{color:'black', textAlign:'left'}}><a><span>Hike2Heaven</span></a></h1></Link>
           </div>
-          <div id="info-2">
-          <Info/>
-           </div>
             
             
             
-          </div>
+          </div> */}
         </div>
       </div>
 

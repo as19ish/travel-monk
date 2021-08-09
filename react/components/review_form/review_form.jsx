@@ -181,86 +181,113 @@ let data = new FormData();
     let {imagePreviewUrl} = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = (<Image thumbnail roundedCircle variant="top" src={imagePreviewUrl} style={{height:'300px',width:'300px'}} />);
+      $imagePreview = (<Image thumbnail roundedCircle variant="top" src={imagePreviewUrl} style={{height:'100px',width:'100px'}} />);
     } else {
-      $imagePreview = (<Image thumbnail roundedCircle variant="top" style={{height:'300px',width:'300px'}} />);
+      $imagePreview = (<Image thumbnail roundedCircle variant="top" style={{height:'100px',width:'100px'}} />);
     }
 
     return (
-    <div>
+    <div className="review-form-sec">
+      <div className="row">
+        <div className="col-md-7 col-sm-7">
+        <div className="title-sec-review">
+          <div className="jumbotron">
+              <h1>We value what <br />you guys says about us</h1>
+              <h4 style={{marginTop:'60px', color:'#777'}}>Write a review for us</h4>
+            </div>
+            </div>
+        </div>
+        <div className="col-md-5 col-sm-5">
 
-<Form onSubmit={this.handleSubmit} style={{padding:'2% 5%'}}>
-        <legend style={{textTransform:'uppercase'}}>Review Form</legend>
+<Form className="review-form" onSubmit={this.handleSubmit}>
+        <legend style={{textAlign:'center',textTransform:'uppercase'}}>Review Form</legend>
 
-
-        <Container fluid style={{padding:'4%', background:'whitesmoke',borderRadius:'50px'}}>
-<Row>
+        <Row>
 <Col style={{textAlign:'center'}}>
-<p style={{display:'inline',fontSize:'1.1rem'}}>We <b>MOUNTAINS-ROVER</b> appreciate your reviews and work on accordingly to improve our services.</p>
+<p style={{display:'inline',fontSize:'1.1rem',color:'#777'}}>We <b>MOUNTAINS-ROVER</b> appreciate your reviews and work on accordingly to improve our services.</p>
 </Col>
 </Row>
-<br/>
-<br/>
+        <Container fluid style={{padding:'4%', background:'whitesmoke',borderRadius:"5px",marginTop:'20px'}}>
         <Row>
         <Col>
 
 
 <Form.Group controlId="exampleForm.ControlInput1" style={{textAlign:'left'}}>
-                <Form.Label className='label_style'>1. Your Name</Form.Label><br/>
-            <Form.Control type="text" value={this.state.name} onChange={this.name_handleChange} className='width_50_in_large' style={{width:'30%'}}/>
+                <Form.Label className='label_style'>Name</Form.Label><br/>
+            <Form.Control type="text" value={this.state.name} onChange={this.name_handleChange} className='form-control' style={{height:"40px"}}/>
             </Form.Group>
 
+<div className="row">
+  <div className="col-md-6 col-sm-6">
 <Form.Group controlId="exampleForm.ControlInput2" style={{textAlign:'left'}}>
-<Form.Label className='label_style'>2. Select Trek You Liked Most</Form.Label><br/>
-<Dropdown as={'Primary'}>
-                        <Button variant="info" className='width_50_in_large' style={{textTransform:'uppercase',width:'30%'}}>{this.state.track_selected.length!=0?this.state.track_selected[0]['track_name']:'Select Trek'}</Button>
+<Form.Label className='label_style'>Select Trek You Liked Most</Form.Label><br/>
+
+                        {/* <Button variant="info" className='form-control' style={{textTransform:'uppercase',height:"40px"}}>{this.state.track_selected.length!=0?this.state.track_selected[0]['track_name']:'Select Trek'}</Button>
                         <Dropdown.Toggle split variant="success" id="dropdown-custom-2" />
                         <Dropdown.Menu style={{maxHeight:'400px', overflow:'scroll'}}>
                           {item}
                         </Dropdown.Menu>
-                      </Dropdown>
+                      </Dropdown> */}
+                       <div class="dropdown">
+  <button style={{width:"100%"}} class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{this.state.track_selected.length!=0?this.state.track_selected[0]['track_name']:'Select Trek'}
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" style={{maxHeight:'300px', overflow:'scroll'}}>
+    <li>{item}</li>
+  </ul>
+</div> 
 </Form.Group>
-
-<Form.Group controlId="exampleForm.ControlInput1" style={{textAlign:'left'}}>
-                <Form.Label className='label_style'>3. Enter Service You Liked The Most (eg: FOOD, GUIDE etc.)</Form.Label><br/>
-            <Form.Control type="text" value={this.state.category} onChange={this.category_handleChange} className='width_50_in_large' style={{width:'30%'}}/>
-            </Form.Group>
-
-          <Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
-          <Form.Label className='label_style'>4. Rate <b>Hike2Heaven</b> Out Of 5</Form.Label><br/>
-          <Dropdown as={'Primary'}>
-                        <Button variant="info" className='width_50_in_large' style={{textTransform:'uppercase',width:'30%'}}>{this.state.rating!=''?this.state.rating:'Select Rating'}</Button>
+</div>
+<div className="col-md-6 col-sm-6">
+<Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
+          <Form.Label className='label_style'>Rate us Out Of 5</Form.Label><br/>
+          {/* <Dropdown as={'Primary'}>
+                        <Button variant="info" className='form-control' style={{textTransform:'uppercase',height:'40px'}}></Button>
                         <Dropdown.Toggle split variant="success" id="dropdown-custom-2" />
                         <Dropdown.Menu >
-                          {item1}
+                          
                         </Dropdown.Menu>
-                      </Dropdown>
+                      </Dropdown> */}
+                       <div class="dropdown">
+  <button style={{width:"100%"}} class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{this.state.rating!=''?this.state.rating:'Select Rating'}
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li>{item1}</li>
+  </ul>
+</div> 
           </Form.Group>
+</div>
+</div>
 
+
+<Form.Group controlId="exampleForm.ControlInput1" style={{textAlign:'left'}}>
+                <Form.Label className='label_style'>Enter Service You Liked The Most (eg: FOOD, GUIDE etc.)</Form.Label><br/>
+            <Form.Control type="text" value={this.state.category} onChange={this.category_handleChange} className='form-control' style={{height:"40px"}}/>
+            </Form.Group>
+
+          
 
  <Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
-          <Form.Label className='label_style'>5. Add Review Description (Limit 200 character)</Form.Label><br/>
-            <Form.Control as="textarea" rows="3" value={this.state.description} onChange={this.description_handleChange} className='width_50_in_large' />
+          <Form.Label className='label_style'>Add Review Description (Limit 200 character)</Form.Label><br/>
+            <Form.Control as="textarea" rows="3" value={this.state.description} onChange={this.description_handleChange} className='form-control' />
 </Form.Group>
 
 
 
-        </Col>
-        <Col>
+        
 
 
 <Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
 
         <Row>
         <Col>
-        <h5 style={{marginTop:'10%'}}>6. Upload Your Photo</h5>
+        <label className="label_style">Upload Your Photo</label>
         <input type="file" onChange={(e)=>this._handleImageChange(e)}/>
         </Col>
-        <Col>
+        {/* <Col>
                                 <div style={{width:'100%',textAlign:'center'}}>
                                   {$imagePreview}
                                     </div>
-        </Col>
+        </Col> */}
         </Row>
 </Form.Group>
 
@@ -290,6 +317,8 @@ let data = new FormData();
  
 
         </Form>
+        </div>
+</div>
 </div>
 
     )

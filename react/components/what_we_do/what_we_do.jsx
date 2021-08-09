@@ -47,7 +47,7 @@ let width = '100%';
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -55,32 +55,47 @@ let width = '100%';
                          <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
-                         </a>
+                         </a> */}
                  
                        </div>
                      </div>
                    </section>
 
-<h2 className="all_blogs_heading" style={{marginTop:'10px',marginBottom:'0.5rem'}}>What We Do @ <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>What We Do</h2>
 <Container fluid className='rafting_container_padding'>
   <Row>
     <Col sm={12} md={12} lg={8}>
     <Youtube_player videoId={videoId} height={height} width={width}/> 
     <br/>
-   <h2 className="all_blogs_heading">What We Do @ <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
-   <br/>
+
    <div className='padding_20'>
     <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 	We Hike2Heaven provide you everlasting feeling of trekking and traveling Meet As UNKNOWN And Leave As WELL-KNOWN. 
 	Give a Chance to Us for Exploring the Place in A Different Manner. You are most Welcome as Couple as well As Groups.
 	<br/>
-	<br/>
-      You can cusotimze your treks as per your choice. For more details please contact us.
 	</p>
 	
-	<h5 style={{textAlign:'left',fontWeight:'500'}}>Contact At <a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a> OR Call / Whatsapp Number <a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></h5>
+  <div style={{marginTop:"30px",marginBottom:"30px"}}>
+    <h6>
+  You can customize your treks as per your choice. For more details please contact us.</h6>
+  </div>
+
+  <div className="row">
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign:'center',fontWeight:'600'}}><i class="fas fa-envelope"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a></p>
+      </div>
+    </div>
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign: "center", fontWeight: '600'}}><i class="fas fa-mobile-alt"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></p>
+      </div>
+    </div>
+  </div>
 	<br/>
-	</div>
+	</div><br />
 <Container fluid>
   <Row>
     <Col className='col_mar' xs={12} sm={12} md={4} lg={4}>
