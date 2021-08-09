@@ -16,7 +16,7 @@ let width = '100%';
 <div>
 <div className='div_static_back_customize'>
 </div>
-<h2 className="all_blogs_heading" style={{marginTop:'10px',marginBottom:'0.5rem'}}>Customize Your Trip with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Customize Your Trip with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
 <Container className='border_color' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col sm={12} md={12} lg={12} className='pad_cen'>
@@ -42,12 +42,27 @@ We do not want to build up constraints. Here its - <b>YOUR service, YOUR way</b>
 <br/><br/>
 	
       You can cusotimze your treks as per your choice. For more details please contact us.<br/>
-	<span>Contact At <a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a> OR Call / Whatsapp Number <a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></span>
+
 
 	</p>
 	
 	</Col>
   </Row>
+  
+<div className="row">
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign:'center',fontWeight:'bolder',  fontSize: '20px'}}><i class="fas fa-envelope"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a></p>
+      </div>
+    </div>
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign: "center", fontWeight: 'bolder', fontSize: '20px'}}><i class="fas fa-mobile-alt"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></p>
+      </div>
+    </div>
+  </div>
 </Container>
 	
 <Container className='border_color' style={{background:'#f8f9fa',padding:'1%'}}>

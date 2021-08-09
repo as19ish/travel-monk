@@ -1,6 +1,4 @@
-.owl-theme .owl-nav{
-/* display: none !important; */
-}
+
 
 /* carousel next button....... */
 .owl-carousel div.owl-nav button.owl-next {
@@ -23,7 +21,6 @@
   bottom: 0;
   color: #FFCC03;
   outline: none;
-  font-family: 'Poppins', sans-serif;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   background: none !important;
@@ -42,8 +39,6 @@
 }
 
 .common_btn{
-
-font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -55,6 +50,16 @@ font-family: "Montserrat", sans-serif;
     color: #fff;
     /* background: #18d26e; */
     background: #458d00;
+    border: none;
+    box-shadow: 0px 1px 4px #191919;
+}
+
+.owl-carousel .owl-stage-outer{
+  padding:0 0 1em 0;
+}
+
+.common_btn:hover{
+  background: #191919;
 }
 
 .card_text {
@@ -98,6 +103,8 @@ font-family: "Montserrat", sans-serif;
     transform: scale(1) !important;
     -webkit-transition: all 0.3s !important;
     transition: all 0.3s !important;
+    border-radius: 5px;
+  overflow: hidden;
   }
 
   .home-our-trek-box:hover { -webkit-transform: scale(1.05) !important; transform: scale(1.05) !important;}
@@ -119,6 +126,8 @@ font-family: "Montserrat", sans-serif;
     margin: 15px auto !important;
     font-size: 20px !important;
 }
+
+
 
   .trek-info-wrapper { text-align: left !important; padding-bottom: 15px !important; color: #0b0b0b !important;}
 
@@ -235,13 +244,6 @@ font-family: "Montserrat", sans-serif;
    display: none !important;
  }
 }
-.head-toolbar-1{
-    /* width: 50% !important; */
-    width: 20% !important;
-  }
-  .nav-menu{
-  width: 60% !important;
-  }
 
 @media (max-width:600px) {
   .m-left-30{
@@ -284,13 +286,8 @@ font-family: "Montserrat", sans-serif;
    }
 
    .mobile-nav-toggle i{
-     color: black !important;
+     color: #fff !important;
    }
-
-   #header.header-transparent {
-    background: transparent;
-    /* background: white !important; */
-  }
   #logo-text{
     color: #FFCC03 !important;
   }
@@ -546,31 +543,6 @@ color: #FFCC03;
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  display: none;
-  left: 15px;
-  bottom: 15px;
-  z-index: 99999;
-}
-
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: #ff7f5d;
-  color: #fff;
-  transition: all 0.4s;
-}
-
-.back-to-top i:hover {
-  background: #ff9f86;
-  color: #fff;
-}
 
 .mob-upcoming-nav-btn {
   display: inline-block;

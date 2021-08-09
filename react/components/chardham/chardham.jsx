@@ -16,7 +16,7 @@ let width = '100%';
 <div>
 <div className='div_static_back_chardham'>
 </div>
-<h2 className="all_blogs_heading" style={{marginTop:'10px',marginBottom:'0.5rem'}}>Char-Dham with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Char-Dham with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
 <Container className='border_color' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col sm={12} md={12} lg={12} className='pad_cen'>
@@ -81,7 +81,23 @@ Karn mandir
 Bavishya badri
 </p>
     </Col>
+
   </Row>
+  
+<div className="row">
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign:'center',fontWeight:'bolder',  fontSize: '20px'}}><i class="fas fa-envelope"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a></p>
+      </div>
+    </div>
+    <div className="col-md-6 col-sm-12">
+      <div className="p-card">
+        <p style={{textAlign: "center", fontWeight: 'bolder', fontSize: '20px'}}><i class="fas fa-mobile-alt"></i></p>
+      <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></p>
+      </div>
+    </div>
+  </div>
 </Container>
 
 
@@ -107,22 +123,24 @@ Bavishya badri
 
     </Col>
     </Row>
-	
-	<p style={{fontSize:'1rem', fontWeight:'700',lineHeight: '30px'}}>
 
-<h5 style={{textAlign:'center'}}>Package</h5>
+<div className="row">
+  <div className="col-lg-5 col-md-6 col-sm-12">
+<h5>Package</h5>
 Group cost for 4 people<br/>
 Cost per person rs 32800<br/>
 32800*4<br/>
 2000 security and other<br/>
 14day 12night<br/>
 Explore The Places with New Experience.....<br/><br/>
-
-<h5 style={{textAlign:'center'}}>Included</h5>
+</div>
+<div className="col-lg-5 col-md-6 col-sm-12">
+<h5>Included</h5>
 Transportation<br/>
 Meal per day<br/>
 Hotel and camping<br/>
-</p>
+</div>
+</div>
 </Container>
 
 <Container style={{padding:'1%'}}>

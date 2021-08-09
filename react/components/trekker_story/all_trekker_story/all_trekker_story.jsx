@@ -50,19 +50,21 @@ let data_array=this.props.stories
         <div className={"col-lg-4 col-md-3 testimonials-item "+data_array.name.trim().split(' ')[0]} onClick={()=>{this.setState({src:"/static/media/"+data_array.trek_photo,flag:true, modal_data:data_array.description,title:data_array.name+"'s Story"})}} style={{cursor:'pointer'}}>
                   <div className="course-item">
                     <img src={"/static/media/"+data_array.trek_photo} className="img-fluid" alt="..." style={{height:'200px',width:'100%'}}/>
+                    <div className="trainer">
+                        <div className="trainer-profile">
+                          <img src={"/static/media/"+data_array.profile_photo} className="img-fluid" alt="trekker-img"/>
+                          
+                        </div>
+                      </div>
                     <div className="course-content" style={{backgroundColor:'white'}}>
-                      <div className="d-flex justify-content-between align-items-center mb-3 trek_name">
+                    <span>{data_array.name}</span>
+                      <div className="mb-3">
                         <h4>{data_array.trek_name}</h4>
                       </div>
 
                       {/* <h3><a href="course-details.html">Story</a></h3> */}
                       <p style={{marginBottom:'0'}}>{data_array.description.substring(0, 120).concat('.... ')}</p>
-                      <div className="trainer d-flex justify-content-between align-items-center">
-                        <div className="trainer-profile d-flex align-items-center">
-                          <img src={"/static/media/"+data_array.profile_photo} className="img-fluid" alt=""/>
-                          <span>{data_array.name}</span>
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                   </div>
@@ -192,7 +194,7 @@ let elements = images.map((element,i,arr) => {
   return <div className={cls} style={style_obj}>
             <div className="carousel-container">
               <div className="container">
-<h2 className="animate__animated animate__fadeInDown">THE BEST EXPERIENCES <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;TREKKER STORIES</span></h2>
+<h2 className="animate__animated animate__fadeInDown">TREKKER STORIES</h2>
                 {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                 {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
               </div>
@@ -213,7 +215,7 @@ let elements = images.map((element,i,arr) => {
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -221,7 +223,7 @@ let elements = images.map((element,i,arr) => {
                          <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
-                         </a>
+                         </a> */}
                  
                        </div>
                      </div>
@@ -229,7 +231,7 @@ let elements = images.map((element,i,arr) => {
 
                    <section id="testimonials" className="courses section-bg">
                     <div className="container" data-aos="fade-up">
-                      <div className="section-header">
+                      <div className="section-header" style={{marginBottom:'50px'}}>
                         <h3>Trekker stories</h3>
                       </div>
 
@@ -241,15 +243,7 @@ let elements = images.map((element,i,arr) => {
                             <div className=" col-lg-4"></div>
                           </div>
 
-                          <div className="row" data-aos="fade-up" data-aos-delay="100">      
-                          <div className=" col-lg-12">
-                              <ul id="testimonials-flters" className="button-group data-filter-group">
-                                {name_filters}
-                              </ul>
-                            </div>
-                          </div>
-
-                      <div className="row testimonials-container" data-aos="fade-up" data-aos-delay="200">
+                      <div className="row testimonials-container" style={{marginTop:"20px"}} data-aos="fade-up" data-aos-delay="200">
                       {items}
                       </div>
                     </div>

@@ -12,14 +12,14 @@ for(let i=0;i<parseInt(data_array.star);i++)
 stars.push(<i className="fa fa-star" aria-hidden="true"></i>);
 }
     return (
-<div className={"testimonial-item "+data_array.name.trim().split(' ')[0]} style={{minHeight:'200px'}}>
+<div className={"testimonial-item "+data_array.name.trim().split(' ')[0]} style={{minHeight:'200px',marginTop:'60px'}}>
   <Row>
     <Col className="col-lg-4 col-12" style={{textAlign:'center'}}><img src={"/static/media/"+data_array.photo} className="testimonial-img" alt=""/>
           <h3 style={{textTransform:'capitalize'}}>{data_array.name}</h3>
           <section className="rating-wrapper">{stars}</section> 
           <h4>{data_array.trek_name}</h4></Col>
     <Col className="col-lg-8 col-12" style={{paddingTop:'20px'}}>
-<div className="modi" style={{position:'relative'}}>
+<div className="modi" style={{position:'relative',padding: '20px'}}>
     <p><img src="/static/assets/img/quote-sign-left.png" class="quote-sign-left" alt=""/>{data_array.description}<img src="/static/assets/img/quote-sign-right.png" class="quote-sign-right" alt=""/></p>
 </div>   
 
@@ -149,7 +149,7 @@ let elements = images.map((element,i,arr) => {
   return <div className={cls} style={style_obj}>
             <div className="carousel-container">
               <div className="container">
-<h2 className="animate__animated animate__fadeInDown">What People Say About Us <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;REVIEWS</span></h2>
+<h2 className="animate__animated animate__fadeInDown">REVIEWS</h2>
                 {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                 {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
               </div>
@@ -171,7 +171,7 @@ console.log("reviews",this.state)
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -179,7 +179,7 @@ console.log("reviews",this.state)
                          <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
-                         </a>
+                         </a> */}
                  
                        </div>
                      </div>
@@ -187,7 +187,7 @@ console.log("reviews",this.state)
 
                    <section id="testimonials" className="courses section-bg">
                     <div className="container" data-aos="fade-up">
-                      <div className="section-header">
+                      <div className="section-header" style={{marginBottom: '50px'}}>
                         <h3>Reviews</h3>
                       </div>
 
@@ -199,15 +199,15 @@ console.log("reviews",this.state)
                             <div className=" col-lg-4"></div>
                           </div>
 
-                          <div className="row" data-aos="fade-up" data-aos-delay="100">      
+                          {/* <div className="row" data-aos="fade-up" data-aos-delay="100">      
                           <div className=" col-lg-12">
                               <ul id="testimonials-flters" className="button-group data-filter-group">
                                 {name_filters}
                               </ul>
                             </div>
-                          </div>
+                          </div> */}
 
-                          <div className="row testimonials-container" data-aos="fade-up" data-aos-delay="200">
+                          <div className="row testimonials-container" style={{marginTop: "20px"}} data-aos="fade-up" data-aos-delay="200">
                       {items}
                       </div>
                     </div>

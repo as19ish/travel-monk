@@ -183,26 +183,23 @@ let gallery_images=[]
                    </section>
              
 			 <Container fluid>
-			 <Row style={{padding:'20px'}}>
-                <Col lg={8} sm={12} md={12} xl={8} className="custom_column_track_detail">
+			    <Row style={{padding:'20px'}}>
+                <Col lg={7} sm={12} md={7} xl={7} className="custom_column_track_detail mb-30">
                     <Tabs defaultActiveKey="about" id="uncontrolled-tab-example" className="uncontrolled-tab-example" >
 
                     <Tab eventKey="about" title="About Trek" >
-                            <Row style={{padding:'20px'}}>
-                       <Col lg={12} sm={12} md={12} xl={12} style={{background:'none'}}>
+                            <Row style={{padding:'10px'}}>
 
                       <Alert>
-                      <legend style={{textAlign:'center', textTransform:'uppercase'}}><b>{other_details[0].track_name}</b></legend>
+                      <legend style={{marginTop:'20px',marginBottom: '20px', textTransform:'uppercase',color:'#FFCC03'}}><h2>{other_details[0].track_name}</h2></legend>
                             <p style={{fontSize:'1rem',fontWeight:'500',whiteSpace:'pre-line'}}>{other_details[0].track_description}</p>
                       </Alert>
-
-                       </Col>
                        </Row>
                       </Tab>
 
 
                     <Tab eventKey="info" title="Basic Details" className='custom_column_track_detail1'>
-                         <Jumbotron style={{textAlign:'center',paddingLeft:'10%',paddingRight:'10%',fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
+                         <Jumbotron style={{textAlign:'center',padding:'10px',margin:'20px 0',fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
                            <Table responsive className='custom_column_track_detail1'>
                                   <tbody> 
                                    <tr>
@@ -283,7 +280,7 @@ let gallery_images=[]
                           </Tab>
 
                                                     <Tab eventKey="contact" title="Cost" style={{fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
-                           <Jumbotron className='custom_column_track_detail1'>
+                           <Jumbotron style={{padding: '10px',margin:'20px 0'}} className='custom_column_track_detail1'>
                             <Container className='custom_column_track_detail1'>
 
                             <Row>
@@ -302,7 +299,7 @@ let gallery_images=[]
                           </Tab>
 
                            <Tab eventKey="activity" title="Activities" style={{fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
-                           <Jumbotron style={{textAlign:'center'}} className='custom_column_track_detail1'>
+                           <Jumbotron style={{textAlign:'center',padding: '10px', margin: '20px 0'}} className='custom_column_track_detail1'>
                             <ListGroup>
                               <ListGroup.Item action className='custom_column_track_detail1'>Snow Camping</ListGroup.Item>
                               <ListGroup.Item action className='custom_column_track_detail1'>
@@ -341,26 +338,26 @@ let gallery_images=[]
 						
 												
 						<Tab eventKey="releted_story" title="Trekker Stories" style={{fontSize:'1rem',fontWeight:'500'}}>
-                           <Jumbotron className='custom_column_track_detail1'>
+                           <Jumbotron style={{padding:'10px', margin: '20px 0'}} className='custom_column_track_detail1'>
                             <Related_story id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>
                           </Tab>
 						
 						
 					      <Tab eventKey="gallery" title="Gallery" style={{fontSize:'1rem',fontWeight:'500'}}>
-                           <Jumbotron className='custom_column_track_detail1'>
+                           <Jumbotron style={{padding:'10px', margin: '20px 0'}}  className='custom_column_track_detail1'>
                             {gallery_images}
                             </Jumbotron>
                           </Tab>
 						  
 						  <Tab eventKey="Other" title="Articles" style={{fontSize:'1rem',fontWeight:'500'}}>
-                           <Jumbotron className='custom_column_track_detail1'>
+                           <Jumbotron style={{padding:'10px', margin: '20px 0'}}  className='custom_column_track_detail1'>
                             <Related_events id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>
                           </Tab>
 						  
 						  <Tab eventKey="releted_review" title="Reviews" style={{fontSize:'1rem',fontWeight:'500'}}>
-                           <Jumbotron className='custom_column_track_detail1'>
+                           <Jumbotron style={{padding:'10px', margin: '20px 0'}}  className='custom_column_track_detail1'>
                             <Related_reviews id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>
                           </Tab>
@@ -368,11 +365,11 @@ let gallery_images=[]
 
                        </Tabs>
                 </Col>
-                <Col lg={4} sm={12} md={12} xl={4}>
+                <Col lg={5} sm={12} md={5} xl={5} className="padding0">
 
 
-            <Jumbotron id="_fix">
-                <Container className='track_detail_form_container'>
+            <Jumbotron className="padding0" id="_fix">
+                <Container className='trek_detail_form_container'>
                           <Form_component data={this.state}/>
                   </Container>
             </Jumbotron>

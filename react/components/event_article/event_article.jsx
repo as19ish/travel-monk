@@ -170,24 +170,24 @@ let name=items[i]
         }
         let variant = this.state[name][x];
         event_items[i].push(         
-      <div className="col-lg-4 col-md-3 testimonials-item" style={{height:'230px'}} onClick={()=>{this.setState({modal_data:variant, modalShow:true})}}>
+      <div className="col-lg-4 col-md-4 testimonials-item" style={{marginBottom: "30px"}} onClick={()=>{this.setState({modal_data:variant, modalShow:true})}}>
         <div className="carousel-item-c">
                 <div className="card-box-b card-shadow news-box">
                   <div className="img-box-b">
-                    <img src={"/static/media/"+this.state[name][x]['img1']} alt="" className="img-b img-fluid" style={{height:'200px'}}/>
+                    <img src={"/static/media/"+this.state[name][x]['img1']} alt="" className="img-b img-fluid" style={{height:'150px'}}/>
                   </div>
-                  <div className="card-overlay">
+                  
                     <div className="card-header-b">
                       <div className="card-title-b">
-                        <h2 className="title-2">
+                        <h4 className="title-2">
                           <a>{this.state[name][x]['subject']}</a>
-                        </h2>
+                        </h4>
                       </div>
                       {/* <div className="card-date">
                         <span className="date-b">18 Sep. 2020</span>
                       </div> */}
                     </div>
-                  </div>
+                  
                 </div>
               </div>
     </div>
@@ -208,7 +208,7 @@ let src = "/static/media/home_images/";
                    return <div className={cls} style={style_obj}>
                              <div className="carousel-container">
                                <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">WELCOME TO <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;Event / Article</span></h2>
+                  <h2 className="animate__animated animate__fadeInDown">Event / Article</h2>
                                  {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                                  {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
                                </div>
@@ -230,7 +230,7 @@ let src = "/static/media/home_images/";
                           {elements}
                          </div>
                  
-                         <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                            <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                            <span className="sr-only">Previous</span>
                          </a>
@@ -238,7 +238,7 @@ let src = "/static/media/home_images/";
                          <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                            <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                            <span className="sr-only">Next</span>
-                         </a>
+                         </a> */}
                  
                        </div>
                      </div>

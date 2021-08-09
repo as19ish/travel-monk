@@ -76,7 +76,7 @@ class ContactForm extends React.Component {
 	if(call_API==false)
 	{
 		
-		alert('Please Fill All The Fields')
+		alert('Please fill all the fields!')
 		event.preventDefault();
 	}
 	else
@@ -160,28 +160,28 @@ let data={}
     return (
      <form className='query_form' onSubmit={this.handleSubmit}>
 
-     <fieldset style={{color:'white'}}>
-        <legend style={{textTransform:'uppercase'}}>Get In Touch With US</legend>
-		<br/><br/>
+      <h5 style={{margin:'0'}}>Get In Touch With US</h5>
+      <div style={{marginTop:'20px'}}>
           <div className="form-group">
-            <label for="nameImput" className="custom_label">Name</label>
-            <input type="text" name="name" value={this.state.name} onChange={this.name_handleChange} className="form-control1" id="nameImput" />
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" value={this.state.name} onChange={this.name_handleChange} className="form-control" id="name" />
           </div>
 
           <div className="form-group">
-            <label for="mobile" className="custom_label">Mobile Number &nbsp;&nbsp;&nbsp;&nbsp;<span style={{color:'#de8a8a'}}><b>** do not use prefix 0 OR +91 **</b></span></label>
-            <input name="number" type="number" value={this.state.mobile} onChange={this.number_handleChange} className="form-control1" id="mobileImput" />
+            <label for="mobile">Mobile Number</label>
+            <input name="number" type="number" placeholder="Enter your number" value={this.state.mobile} onChange={this.number_handleChange} className="form-control" id="mobile" />
+            <small style={{color:'#de8a8a'}}><b>** do not use prefix 0 OR +91 **</b></small>
           </div>
           <div className="form-group">
-            <label for="emailImput" className="custom_label">Email</label>
-            <input name="email" type="email" value={this.state.email} onChange={this.mail_handleChange} className="form-control1" id="emailImput" />
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="Enter your email" value={this.state.email} onChange={this.mail_handleChange} className="form-control" id="email" />
           </div>
 
           <div className="form-group">
-            <label for="Track" className="custom_label">Trek Name / Query</label>
-            <input name="Track" type="text" value={this.state.destination} onChange={this.dest_handleChange} className="form-control1" id="emailImput" />
+            <label for="trek" >Trek Name / Query</label>
+            <input name="Track" type="text" placeholder="Write your query here" value={this.state.destination} onChange={this.dest_handleChange} className="form-control" id="trek" />
           </div>
-		  
+		  </div>
 		  <div id='success_message' className="alert alert-success" role="alert" style={{display: 'none',borderRadius:'15px'}}>
   <button type="button" className="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
   <div className="form_success_msg">
@@ -197,7 +197,6 @@ let data={}
           <div style={{textAlign:'center'}}>
           <input type="submit" value="Submit" className="callback_button" disabled={this.state.loading}/>
           </div>
-       </fieldset>
 	      
         </form>
 

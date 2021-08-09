@@ -96,7 +96,7 @@ shouldComponentUpdate ()
                   alt="First slide"
                 />
                 <Carousel.Caption style={{top:'0',bottom:'auto',left:'0',right:'0',backgroundColor:'rgba(0, 0, 0, 0.5)',}}>
-                  <h2 style={{textTransform:'uppercase'}}>{other_details[0]['track_name']}</h2>
+                  <h4 style={{textTransform:'uppercase'}}>{other_details[0]['track_name']}</h4>
                 </Carousel.Caption>
               </Carousel.Item>
            )
@@ -121,7 +121,7 @@ let gallery_images=[]
                     <Tabs defaultActiveKey="about" id="uncontrolled-tab-example" className="uncontrolled-tab-example" >
 
                     <Tab eventKey="about" title="About Trek" >
-                            <Row style={{padding:'20px'}}>
+                            <Row style={{paddingTop:'20px'}}>
                        <Col lg={12} sm={12} md={12} xl={12} style={{background:'none'}}>
 
                       <Alert>
@@ -305,7 +305,7 @@ let gallery_images=[]
 
 
             <Jumbotron id="_fix">
-                <Container className='track_detail_form_container'>
+                <Container className='track_detail_form_container mt-20'>
                           <Form_component data={this.props.location.state}/>
                   </Container>
             </Jumbotron>

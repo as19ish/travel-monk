@@ -141,14 +141,16 @@ return(
     <div className="section-header">
         <h3>Reviews</h3>
       </div>
+      <div style={{marginTop:'40px'}}>
       {cards.length>0?<OwlCarousel
             className="owl-theme"
             {...options}>
               {cards}
             </OwlCarousel>:null}
+      </div>
     </div>
-    <div style={{marginTop:'10px',textAlign:'center'}}>
-      <a href="/all_reviews" className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</a>
+    <div style={{marginTop:'20px',textAlign:'center'}}>
+      <a href="/all_reviews"><button className="common_btn btn-get-started scrollto animate__animated animate__fadeInUp">View All</button></a>
       </div>
     
   </section>

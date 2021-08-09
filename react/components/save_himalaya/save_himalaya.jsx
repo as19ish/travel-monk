@@ -324,7 +324,7 @@ let src = "/static/media/home_images/";
                    return <div className={cls} style={style_obj}>
                              <div className="carousel-container">
                                <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">WELCOME TO <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;Social Perspective</span></h2>
+                  <h2 className="animate__animated animate__fadeInDown">Social Perspective</h2>
                                  {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                                  {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
                                </div>
@@ -357,10 +357,10 @@ let src = "/static/media/home_images/";
                      </div>
                    </section>
 			
-								<Container className='border_bottom' style={{background:'#f8f9fa',padding:'1%'}}>
+								<Container className='border_bottom' style={{background:'#f8f9fa',padding:'1%',marginTop:'30px'}}>
 								 <Row>
 									<Col style={{textAlign:'center'}}>
-									<h1 style={{textAlign:'center',fontWeight:'bold',fontSize:'24px'}}>Our Social Perspective</h1>  
+									<h1 style={{textAlign:'center',fontWeight:'bold',fontSize:'24px',marginTop:'10px'}}>Our Social Perspective</h1>  
 									</Col>
 									</Row>
 								</Container>		

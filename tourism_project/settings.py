@@ -25,7 +25,7 @@ SECRET_KEY = '%z@jmh8qtupx_$w63pvh=jj3j=d$u499(!!1s9%bz2161#dmk5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'tourism_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'monk_db',
-        'USER': 'admin',
-        'PASSWORD': 'QgZrRCgKRHnXSmwkRfUp',
-        'HOST': 'monk-db.cso9p3bva9sf.us-east-2.rds.amazonaws.com',
+        'NAME': 'travel_monk',
+        'USER': 'root',
+        'PASSWORD': 'qazplm',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
@@ -137,7 +137,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = "/static/"
 import os 
 STATICFILES_DIRS = (
-    "/home/ubuntu/django/travel-monk/tourism_project/static/",
+    "/home/shc/travel-monk/tourism_project/static/",
 )
 
 
@@ -153,3 +153,10 @@ CORS_ORIGIN_WHITELIST=[
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+   }
+}

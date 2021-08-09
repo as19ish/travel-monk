@@ -9,40 +9,27 @@
   white-space: nowrap;
 }
 
-@charset "UTF-8";
-
 .svg-inline--fa {
   vertical-align: -0.200em;
 }
 
 .rounded-social-buttons {
-  text-align: center;
-  width:100%;
-  position: fixed;
-  bottom: 0;
-}
-
-@media screen and (min-width: 800px) {
-.rounded-social-buttons {
-  text-align: right;
-}
+  position: relative;
 }
 
 .rounded-social-buttons .social-button {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  padding-top: 7px;
   text-decoration: none;
   text-align: center;
   color: #fefefe;
-  font-size: 1.5625rem;
+  font-size: 0.5rem;
   font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
+  border-radius: 50%;
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
@@ -55,7 +42,7 @@
 }
 
 .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram, .fa-whatsapp, .fa-phone {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .rounded-social-buttons .social-button.facebook {

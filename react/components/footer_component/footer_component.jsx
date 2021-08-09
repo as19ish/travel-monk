@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import './footer.css';
 import {Link} from 'react-router-dom';
 import {Container,Row, Col, Modal,Image} from 'react-bootstrap';
+import Social_media_section from "../social_media_section/social_media_section";
+import Logo from '../../../tourism_project/static/assets/img/h2h-logo.png';
 
 function MyVerticallyCenteredModal(props) {
 
@@ -59,10 +61,22 @@ let img_set2=['img11.jpg','img10.jpg','img5.jpg','img7.jpg','img8.jpg','img6.jpg
         <div className="row">
 
           <div className="col-lg-4 col-md-6 footer-info">
-          <h4 className="logo mr-auto"><a href=""><Link to="/home"><img style={{maxHeight:'50px'}} src="/static/media/h2h-logo.png"/></Link></a></h4>
-            <p>Traveling  means live the unlived moment and the path to know ourself  in a better way.We Hike2Heaven provide you everlasting feeling of trekking and traveling
+          <div className="f-logo"><Link to="/"><img style={{maxHeight:'50px'}} src={Logo} alt="hike2heaven" /></Link></div>
+            <p className="mt-20">Traveling  means live the unlived moment and the path to know ourself  in a better way.We Hike2Heaven provide you everlasting feeling of trekking and traveling
 Meet As UNKNOWN And Leave As WELL-KNOWN. Give a Chance to Us for Exploring the Place in A Different Manner. You are most Welcome as Couple as well As Groups.
 </p>
+
+<div className="footer-contact mt-30">
+            <h4>Contact Us</h4>
+            <p>
+              Dehradun,<br/>
+              India<br/>
+              <strong>Phone:</strong> +917409903776<br/>
+              <strong>Phone:</strong> 9756245146<br/>
+              <strong>Email:</strong> info@hike2heaven.com<br/>
+            </p>
+
+          </div>
           </div>
 
           <div className="col-lg-4 col-md-6 footer-links">
@@ -75,19 +89,12 @@ Meet As UNKNOWN And Leave As WELL-KNOWN. Give a Chance to Us for Exploring the P
               <li><i className="ion-ios-arrow-right"></i> <a href="/all_trekker_stories/">Trekker stories</a></li>
               <li><i className="ion-ios-arrow-right"></i> <a href="/about_us">About us</a></li>
             </ul>
+            <div className="mt-30">
+              <Social_media_section />
+            </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              Dehradun,<br/>
-              India<br/>
-              <strong>Phone:</strong> +917409903776<br/>
-              <strong>Phone:</strong> 9756245146<br/>
-              <strong>Email:</strong> info@hike2heaven.com<br/>
-            </p>
-
-          </div>
+          
 
         </div>
       </div>
@@ -98,11 +105,12 @@ Meet As UNKNOWN And Leave As WELL-KNOWN. Give a Chance to Us for Exploring the P
         &copy; Copyright <strong>Hike2Heaven</strong>. All Rights Reserved
       </div>
       <div className="credits">
-        Designed by <a href="">Kamal Singh Rautela</a>
+        Designed by <a href="https://company.
+  noobtodev.com" target="_blank"><span>NoobtoDev</span></a>
       </div>
     </div>
     {/* <div id="preloader"></div> */}
-  <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a>
+  <a className="back-to-top"><i className="icofont-simple-up"></i></a>
   </footer>
 
 

@@ -47,21 +47,21 @@ render() {
 let variant = this.props.blogs;
     return (
 	<React.Fragment>
-	<div className="col-lg-4 col-md-3 testimonials-item " onClick={()=>{this.setState({src:"/static/media/"+variant.blog_image,flag:true, modal_data:variant.blog_details,title:variant.blog_title})}}>
+	<div className="col-lg-4 col-md-4 testimonials-item " onClick={()=>{this.setState({src:"/static/media/"+variant.blog_image,flag:true, modal_data:variant.blog_details,title:variant.blog_title})}}>
       <div className="carousel-item-c">
-              <div className="card-box-b card-shadow news-box">
+              <div className="card-box-b h- card-shadow news-box mb-3">
                 <div className="img-box-b">
                   <img src={"/static/media/"+this.props.blogs.blog_image} alt="" className="img-b img-fluid" style={{height:'280px'}}/>
                 </div>
                 <div className="card-overlay">
-                  <div className="card-header-b">
+                  <div className="card-header-b h-card-head">
                     <div className="card-category-b">
                       <a className="category-b">News</a>
                     </div>
-                    <div className="card-title-b">
-                      <h2 className="title-2">
-                        <a>{this.props.blogs.blog_subject}</a>
-                      </h2>
+                    <div className="card-title-b" style={{margin:"10px 0px"}}>
+                      <p className="title-2">
+                        <a style={{color: "#fff",margin:"10px 0px"}}>{this.props.blogs.blog_subject}</a>
+                      </p>
                     </div>
                     <div className="card-date">
                       <span className="date-b">18 Sep. 2020</span>
@@ -203,7 +203,7 @@ for(let i=0;i<blog_length;i++ )
                    return <div className={cls} style={style_obj}>
                              <div className="carousel-container">
                                <div className="container">
-                 <h2 className="animate__animated animate__fadeInDown">WELCOME TO <span style={{borderLeft:'4px solid #18d26e',color:'#18d26e'}}>&nbsp;&nbsp;NEWS SECTION</span></h2>
+                 <h2 className="animate__animated animate__fadeInDown">NEWS</h2>
                                  {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
                                  {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
                                </div>
@@ -224,7 +224,7 @@ for(let i=0;i<blog_length;i++ )
                                            {elements}
                                           </div>
                                   
-                                          <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                                          {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
                                             <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
                                             <span className="sr-only">Previous</span>
                                           </a>
@@ -232,7 +232,7 @@ for(let i=0;i<blog_length;i++ )
                                           <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
                                             <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
                                             <span className="sr-only">Next</span>
-                                          </a>
+                                          </a> */}
                                   
                                         </div>
                                       </div>
@@ -240,13 +240,13 @@ for(let i=0;i<blog_length;i++ )
                  
                                     <section id="testimonials" className="courses section-bg">
                                      <div className="container" data-aos="fade-up">
-                                       <div className="section-header">
+                                       <div className="section-header" style={{marginBottom:"50px"}}>
                                          <h3>Latest News Updates</h3>
                                        </div>
                  
                                        <div className="row" data-aos="fade-up" data-aos-delay="100">
                                            <div className=" col-lg-4"></div>
-                                           <div className=" col-lg-4">
+                                           <div className=" col-lg-4" style={{marginBottom: "25px"}}>
                                            <p><input type="text" className="quicksearch input-sm form-control" placeholder="news title/keyword" /></p>
                                              </div>
                                              <div className=" col-lg-4"></div>

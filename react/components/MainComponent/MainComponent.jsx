@@ -206,7 +206,6 @@ class MainComponent extends Component {
 				 </Suspense>
 				   
 				   
-								 <Route path="/"  component={Social_media_section}/> 
 				 
 
  
