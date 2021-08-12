@@ -27,7 +27,7 @@ function MyVerticallyCenteredModal(props) {
         </p>
 		<br/>
 		<Image src={props.src} thumbnail /><br/><br/>
-        <p id='replace_br' style={{whiteSpace:'pre-line',color:'black',fontSize:'1.2rem',fontWeight:'600'}}>
+        <p id='replace_br' style={{whiteSpace:'pre-line',color:'#191919',fontSize:'1.4rem',fontWeight:'600'}}>
           {props.data}
         </p>
       </Modal.Body> 
@@ -118,9 +118,9 @@ axios.get('/view_trekker_story_4/')
                 </div>
               </div>
             <div className="course-content">
-            <span>{variant.name}</span>
+            <span style={{marginTop:"10px",fontSize:"20px"}}>{variant.name}</span>
               <div className="mb-3">
-                <h4>{variant.trek_name}</h4>
+                <h4 >{variant.trek_name}</h4>
               </div>
               <p style={{marginBottom:'0'}}>{variant.description.substring(0, 120).concat('.... ')}</p>
               

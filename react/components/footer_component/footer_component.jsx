@@ -60,7 +60,7 @@ let img_set2=['img11.jpg','img10.jpg','img5.jpg','img7.jpg','img8.jpg','img6.jpg
       <div className="container">
         <div className="row">
 
-          <div className="col-lg-4 col-md-6 footer-info">
+          <div className="col-lg-6 col-md-7 footer-info">
           <div className="f-logo"><Link to="/"><img style={{maxHeight:'50px'}} src={Logo} alt="hike2heaven" /></Link></div>
             <p className="mt-20">Traveling  means live the unlived moment and the path to know ourself  in a better way.We Hike2Heaven provide you everlasting feeling of trekking and traveling
 Meet As UNKNOWN And Leave As WELL-KNOWN. Give a Chance to Us for Exploring the Place in A Different Manner. You are most Welcome as Couple as well As Groups.
@@ -79,7 +79,7 @@ Meet As UNKNOWN And Leave As WELL-KNOWN. Give a Chance to Us for Exploring the P
           </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 footer-links">
+          <div className="col-lg-6 col-md-5 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i className="ion-ios-arrow-right"></i> <a href="/">Home</a></li>

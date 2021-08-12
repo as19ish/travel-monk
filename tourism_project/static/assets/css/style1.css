@@ -370,23 +370,24 @@
 }
 
 .courses .course-content p {
-  min-height: 85px;
-  font-size: 14px;
+
+  font-size: 20px;
   color: #777777;
 }
 
 .courses .course-content h4 {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #191919;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .courses .course-content .price {
   margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  color: #37423b;
+  font-weight: 600;
+  font-size: 17px;
+  color: #191919;
 }
 
 .courses .trainer {
@@ -466,6 +467,9 @@ height: 70px;
 .card-header-b .title-2 {
   margin-bottom: 0;
   padding: .6rem 0;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 

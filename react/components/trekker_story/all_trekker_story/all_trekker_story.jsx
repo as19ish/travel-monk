@@ -12,18 +12,18 @@ function MyVerticallyCenteredModal(props) {
       centered
       style={{color:'white'}}
     >
-      <Modal.Header closeButton className="modal_cross_sign_white" style={{background:'black'}}>
-        <Modal.Title id="contained-modal-title-vcenter" style={{color:'#FFCC03',fontSize:'1.2rem'}}>
+      <Modal.Header closeButton className="modal_cross_sign_white" style={{background:'#191919'}}>
+        <Modal.Title id="contained-modal-title-vcenter" style={{color:'#FFf',fontSize:'1.4rem'}}>
          TREKKER STORY
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-      <p style={{textTransform:'capitalize',whiteSpace:'pre-line',color:'black',fontSize:'1.4rem',fontWeight:'600',textAlign:'center'}}>
+      <p style={{textTransform:'capitalize',whiteSpace:'pre-line',color:'#191919',fontSize:'1.4rem',fontWeight:'600',textAlign:'center'}}>
          {props.title}
         </p>
 		<br/>
 		<Image src={props.src} thumbnail /><br/><br/>
-        <p id='replace_br' style={{whiteSpace:'pre-line',color:'black',fontSize:'1.2rem',fontWeight:'600'}}>
+        <p id='replace_br' style={{whiteSpace:'pre-line',color:'#191919',fontSize:'1.4rem',fontWeight:'600'}}>
           {props.data}
         </p>
       </Modal.Body> 
@@ -57,13 +57,13 @@ let data_array=this.props.stories
                         </div>
                       </div>
                     <div className="course-content" style={{backgroundColor:'white'}}>
-                    <span>{data_array.name}</span>
-                      <div className="mb-3">
-                        <h4>{data_array.trek_name}</h4>
+                    <p style={{fontSize: "20px",marginTop: "10px"}}>{data_array.name}</p>
+                      <div>
+                        <h3>{data_array.trek_name}</h3>
                       </div>
 
                       {/* <h3><a href="course-details.html">Story</a></h3> */}
-                      <p style={{marginBottom:'0'}}>{data_array.description.substring(0, 120).concat('.... ')}</p>
+                      <p style={{marginBottom:"0"}}>{data_array.description.substring(0, 120).concat('.... ')}</p>
                       
                     </div>
                   </div>
