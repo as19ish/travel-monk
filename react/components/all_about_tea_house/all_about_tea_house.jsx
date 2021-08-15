@@ -79,7 +79,7 @@ for (let i=0;i<tea_type_carousel_item_array2.length;i++)
 <div>
 <div className='div_static_back_tea'>
 </div>
-<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Beautifull Tea Houses at <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Beautifull Tea Houses </h2>
 <Container className='border_color' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col sm={12} md={12} lg={12} className='pad_cen'>
@@ -92,7 +92,7 @@ for (let i=0;i<tea_type_carousel_item_array2.length;i++)
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
      
 	 <span style={{fontWeight:'700'}}>Tea is beautiful beyond love</span> and <span style={{fontWeight:'700'}}>Tea Houses are love beyond life</span> if you're a tea-lover"
 	 <br/><br/>
@@ -152,7 +152,7 @@ We provide different types of Tea and Himalayan food.
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
- <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+ <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 <span style={{fontWeight:'700'}}>If you are cold it will warm you. if you are too heated it will cool you. 
 If you are depressed.it will cheer you.if you are excited, it will clam you.</span>
 <br/>
@@ -193,7 +193,7 @@ And that little bit of warmth that the stove kicks out can make all the differen
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
- <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+ <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 Then you have the fact that, when staying at teahouses, you will not need to carry a heavy tent with you along the trail. 
 One of the downsides to camping when trekking is that you have to carry your tent with you, 
 unless you hire a porter to carry it for you. Even if you do have a guide, they do not usually carry your gear, 
@@ -220,7 +220,7 @@ which makes it heavier.
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
- <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+ <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 Trekking 7-8 hours with that extra load can make you more tired, and can even leave you enjoying the experience less. 
 Without a tent weighing you down, and the ability to sleep in a bed at night, you can enjoy the scenery more without 
 worrying about getting too tired by the end of the day.

@@ -431,11 +431,15 @@ height: 70px;
   margin-bottom: 20px!important;
 }
 
+.nav-tabs{
+  box-shadow: 2px 2px 8px #e2e2e2;
+}jghjgjhgjh
+
 /*======================================
 //--//-->   NEWS - CARD-B
 ======================================*/
 .card-header-b {
-  padding: 0.5rem;
+  padding: 2rem 0.5rem 0 0.5rem;
   position: relative;
   color: #191919;
   float: left;

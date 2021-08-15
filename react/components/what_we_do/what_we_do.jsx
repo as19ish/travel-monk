@@ -69,7 +69,7 @@ let width = '100%';
     <br/>
 
    <div className='padding_20'>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 	We Hike2Heaven provide you everlasting feeling of trekking and traveling Meet As UNKNOWN And Leave As WELL-KNOWN. 
 	Give a Chance to Us for Exploring the Place in A Different Manner. You are most Welcome as Couple as well As Groups.
 	<br/>

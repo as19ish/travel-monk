@@ -28,7 +28,7 @@ let width = '100%';
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px'}}>
 
             Rafting is a competitive sport in which the objective is to navigate downstream on river rapids using an inflated raft.
             It is considered as an extreme sport which is highly challenging and risky, and requires a great deal of teamwork.
@@ -43,7 +43,7 @@ let width = '100%';
     </p>
 <br/>
 
-<p style={{fontSize:'1rem', fontWeight:'700',lineHeight: '30px'}}>
+<p style={{fontSize:'18px', fontWeight:'700',lineHeight: '30px'}}>
 Rafting packages in Rishikesh starting from Rs 600/person and goes up to Rs 2800/person
 depending upon the distance of rafting trip, rapid grade, season and number of person.<br/>
 </p>
@@ -51,13 +51,13 @@ depending upon the distance of rafting trip, rapid grade, season and number of p
 <div className="row">
     <div className="col-md-6 col-sm-12">
       <div className="p-card">
-        <p style={{textAlign:'center',fontWeight:'bolder',  fontSize: '20px'}}><i class="fas fa-envelope"></i></p>
+        <p style={{textAlign:'center',fontWeight:'bolder',  fontSize: '18px'}}><i class="fas fa-envelope"></i></p>
       <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="mailto:mountainsrover@gmail.com">mountainsrover@gmail.com </a></p>
       </div>
     </div>
     <div className="col-md-6 col-sm-12">
       <div className="p-card">
-        <p style={{textAlign: "center", fontWeight: 'bolder', fontSize: '20px'}}><i class="fas fa-mobile-alt"></i></p>
+        <p style={{textAlign: "center", fontWeight: 'bolder', fontSize: '18px'}}><i class="fas fa-mobile-alt"></i></p>
       <p style={{textAlign:'center',fontWeight:'500'}}><a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919557115706">+919557115706</a>  ,<a style={{textDecoration:'underline', cursor:'pointer'}} href="tel:+919756245146">+919756245146</a></p>
       </div>
     </div>

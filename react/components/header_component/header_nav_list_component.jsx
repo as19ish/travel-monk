@@ -5,7 +5,7 @@ import $ from 'jquery';
 import axios from 'axios'
 import { Link} from 'react-router-dom'
 import Search from '../search_component/search'
-//import Info from'../info/info';
+import Info from'../info/info';
 import Logo from '../../../tourism_project/static/assets/img/h2h-logo.png';
 //main component....................
 
@@ -79,13 +79,13 @@ for(let i=0;i<category_length;i++ )
 <div className='mob'>
 
 <header id="header" className="fixed-top header-transparent">
-      <div className="container-fluid padding-left-0">
+      <div className="container">
 
       <div className="row">
         <div className="d-flex justify-con">          
           
           <div className="logo">
-            <Link to="/"><img src={Logo} alt="hike2heaven-logo"/></Link>
+            <Link to="/"><img src={Logo} alt="hike2heaven-logo" style={{height: '75px',width:'120px'}}/></Link>
           </div>
         
           <nav className="nav-menu d-lg-block">
@@ -140,7 +140,8 @@ for(let i=0;i<category_length;i++ )
                   <li><a href="#"><Link to={{pathname: '/about_us'}}>About Us</Link></a></li>
                 </ul>
               </li>
-            </ul>
+           </ul>
+           
           </nav>
           {/* <div className='head-toolbar-2'>
           <div className='l-display-none'>
@@ -152,6 +153,9 @@ for(let i=0;i<category_length;i++ )
             
           </div> */}
         </div>
+        <div style={{display:'inline'}}>
+           <Info />
+           </div>
       </div>
 
     </div>

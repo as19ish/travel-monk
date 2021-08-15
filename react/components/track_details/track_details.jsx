@@ -126,7 +126,7 @@ let gallery_images=[]
 
                       <Alert>
                       <legend style={{textAlign:'center', textTransform:'uppercase'}}><b>{other_details[0].track_name}</b></legend>
-                            <p style={{fontSize:'1rem',fontWeight:'500',whiteSpace:'pre-line'}}>{other_details[0].track_description}</p>
+                            <p style={{fontSize:'18px',fontWeight:'500',whiteSpace:'pre-line'}}>{other_details[0].track_description}</p>
                       </Alert>
 
                        </Col>
@@ -135,7 +135,7 @@ let gallery_images=[]
 
 
                     <Tab eventKey="info" title="Basic Details" className='custom_column_track_detail1'>
-                         <Jumbotron style={{textAlign:'center',paddingLeft:'10%',paddingRight:'10%',fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
+                         <Jumbotron style={{textAlign:'center',paddingLeft:'10%',paddingRight:'10%',fontSize:'18px',fontWeight:'500'}} className='custom_column_track_detail1'>
                            <Table responsive className='custom_column_track_detail1'>
                                   <tbody> 
                                    <tr>
@@ -200,14 +200,14 @@ let gallery_images=[]
 
 
 
-                          <Tab eventKey="home" title="Short Itinerary" style={{fontSize:'1rem',fontWeight:'500'}}>
+                          <Tab eventKey="home" title="Short Itinerary" style={{fontSize:'18px',fontWeight:'500'}}>
                               <div>
                                 <ul className="timeline">
                                   {list_item_day}
                                 </ul>
                               </div>
                           </Tab>
-                          <Tab eventKey="profile" title="Tour Plan" style={{fontSize:'1rem',fontWeight:'500'}}>
+                          <Tab eventKey="profile" title="Tour Plan" style={{fontSize:'18px',fontWeight:'500'}}>
                                 <div>
                                 <ul className="timeline">
                                   {list_item_sub_day}
@@ -215,7 +215,7 @@ let gallery_images=[]
                               </div>
                           </Tab>
 
-                                                    <Tab eventKey="contact" title="Cost" style={{fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
+                                                    <Tab eventKey="contact" title="Cost" style={{fontSize:'18px',fontWeight:'500'}} className='custom_column_track_detail1'>
                            <Jumbotron className='custom_column_track_detail1'>
                             <Container className='custom_column_track_detail1'>
 
@@ -227,14 +227,14 @@ let gallery_images=[]
                                  <br/>
                               <Row>
                                 <Col><b>Cost Customization :</b></Col>
-                                <Col><p style={{textTransform:'capitalize',fontSize:'1rem',whiteSpace:'pre-line'}}>{this.props.location.state.other_details[0].track_cost_cusomization}</p></Col>
+                                <Col><p style={{textTransform:'capitalize',fontSize:'18px',whiteSpace:'pre-line'}}>{this.props.location.state.other_details[0].track_cost_cusomization}</p></Col>
                               </Row>
 
                             </Container>
                             </Jumbotron>
                           </Tab>
 
-                           <Tab eventKey="activity" title="Activities" style={{fontSize:'1rem',fontWeight:'500'}} className='custom_column_track_detail1'>
+                           <Tab eventKey="activity" title="Activities" style={{fontSize:'18px',fontWeight:'500'}} className='custom_column_track_detail1'>
                            <Jumbotron style={{textAlign:'center'}} className='custom_column_track_detail1'>
                             <ListGroup>
                               <ListGroup.Item action className='custom_column_track_detail1'>Snow Camping</ListGroup.Item>
@@ -273,26 +273,26 @@ let gallery_images=[]
                         </Tab>
 						
 												
-						<Tab eventKey="releted_story" title="Trekker Stories" style={{fontSize:'1rem',fontWeight:'500'}}>
+						<Tab eventKey="releted_story" title="Trekker Stories" style={{fontSize:'18px',fontWeight:'500'}}>
                            <Jumbotron className='custom_column_track_detail1'>
                             <Related_story id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>
                           </Tab>
 						
 						
-					      <Tab eventKey="gallery" title="Gallery" style={{fontSize:'1rem',fontWeight:'500'}}>
+					      <Tab eventKey="gallery" title="Gallery" style={{fontSize:'18px',fontWeight:'500'}}>
                            <Jumbotron className='custom_column_track_detail1'>
                             {gallery_images}
                             </Jumbotron>
                           </Tab>
 						  
-						  <Tab eventKey="Other" title="Articles" style={{fontSize:'1rem',fontWeight:'500'}}>
+						  <Tab eventKey="Other" title="Articles" style={{fontSize:'18px',fontWeight:'500'}}>
                            <Jumbotron className='custom_column_track_detail1'>
                             <Related_events id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>
                           </Tab>
 						  
-						  <Tab eventKey="releted_review" title="Reviews" style={{fontSize:'1rem',fontWeight:'500'}}>
+						  <Tab eventKey="releted_review" title="Reviews" style={{fontSize:'18px',fontWeight:'500'}}>
                            <Jumbotron className='custom_column_track_detail1'>
                             <Related_reviews id={other_details[0]['id']} name={other_details[0]['track_name']} />
                             </Jumbotron>

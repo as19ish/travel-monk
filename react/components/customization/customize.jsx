@@ -16,7 +16,7 @@ let width = '100%';
 <div>
 <div className='div_static_back_customize'>
 </div>
-<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Customize Your Trip with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Customize Your Trip</h2>
 <Container className='border_color' style={{background:'#f8f9fa',padding:'1%'}}>
   <Row>
     <Col sm={12} md={12} lg={12} className='pad_cen'>
@@ -28,7 +28,7 @@ let width = '100%';
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px'}}> 
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px'}}> 
 	Customizing the trek is a very good option for families, students, corporate groups, and friends.
 Choose your Trek ,Activity,requirements and Contact Us
 

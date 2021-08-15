@@ -110,7 +110,6 @@ a {
 }
 
 .card-box-b{
-	height: 230px;
 	box-shadow: 2px 2px 8px #e2e2e2;
 	border-radius: 5px;
 	margin-top: 30px;
@@ -136,6 +135,9 @@ font-size: 32px;
 .on_small_padding_0
 {
  padding:0 !important;
+}
+.card-header-b{
+	padding: 10px;
 }
 }
 
@@ -174,6 +176,10 @@ font-size: 32px;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-fill-mode: forwards;
+}
+
+.img-box-b{
+	overflow: hidden;
 }
 
 @keyframes Progress {

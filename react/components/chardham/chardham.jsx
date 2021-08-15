@@ -28,7 +28,7 @@ let width = '100%';
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 
 Nestled among the serene heights of the great Himalayas are four pilgrim-destinations namely Yamunotri, Gangotri, Kedarnath, and Badrinath, collectively known as Char Dham.
 
@@ -127,18 +127,20 @@ Bavishya badri
 <div className="row">
   <div className="col-lg-5 col-md-6 col-sm-12">
 <h5>Package</h5>
+<p style={{fontSize:"18px"}}>
 Group cost for 4 people<br/>
 Cost per person rs 32800<br/>
 32800*4<br/>
 2000 security and other<br/>
 14day 12night<br/>
-Explore The Places with New Experience.....<br/><br/>
+Explore The Places with New Experience.....<br/><br/></p>
 </div>
 <div className="col-lg-5 col-md-6 col-sm-12">
 <h5>Included</h5>
+<p style={{fontSize:"18px"}}>
 Transportation<br/>
 Meal per day<br/>
-Hotel and camping<br/>
+Hotel and camping<br/></p>
 </div>
 </div>
 </Container>
@@ -146,7 +148,7 @@ Hotel and camping<br/>
 <Container style={{padding:'1%'}}>
   <Row>
     <Col style={{textAlign:'left'}}>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
 <b>Yamunotri</b>
 <br/>
 Yamunotri is dedicated to the Goddess Yamuna who goes along the pilgrims to the high altitudes of the picturesque Rawai Valley. It is believed that a bath in the waters of the Yamuna protects the devotee from untimely death.
