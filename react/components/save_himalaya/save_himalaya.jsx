@@ -22,7 +22,7 @@ function MyVerticallyCenteredModal(props) {
          {props.data['sub1']}
         </p>
         <Image src={"/static/media/"+props.data['img1']} thumbnail /><br/><br/>
-        <p style={{whiteSpace:'pre-line',color:'black',fontSize:'1rem',fontWeight:'600',textAlign:'left'}}>
+        <p style={{whiteSpace:'pre-line',color:'#191919',fontSize:'18px',textAlign:'left'}}>
          {props.data['des1']}
         </p>
         <br/><br/>
@@ -31,7 +31,7 @@ function MyVerticallyCenteredModal(props) {
          {props.data['sub2']}
         </p>
         <Image src={"/static/media/"+props.data['img2']} thumbnail /><br/><br/>
-        <p style={{whiteSpace:'pre-line',color:'black',fontSize:'1rem',fontWeight:'600',textAlign:'left'}}>
+        <p style={{whiteSpace:'pre-line',color:'#191919',fontSize:'18px',textAlign:'left'}}>
          {props.data['des2']}
         </p>
         <br/><br/>
@@ -40,7 +40,7 @@ function MyVerticallyCenteredModal(props) {
          {props.data['sub3']}
         </p>
         <Image src={"/static/media/"+props.data['img3']} thumbnail /><br/><br/>
-        <p style={{whiteSpace:'pre-line',color:'black',fontSize:'1rem',fontWeight:'600',textAlign:'left'}}>
+        <p style={{whiteSpace:'pre-line',color:'#191919',fontSize:'18px',textAlign:'left'}}>
          {props.data['des3']}
         </p>
         <br/><br/>
@@ -49,7 +49,7 @@ function MyVerticallyCenteredModal(props) {
          {props.data['sub4']}
         </p>
         <Image src={"/static/media/"+props.data['img4']} thumbnail /><br/><br/>
-        <p style={{whiteSpace:'pre-line',color:'black',fontSize:'1rem',fontWeight:'600',textAlign:'left'}}>
+        <p style={{whiteSpace:'pre-line',color:'#191919',fontSize:'18px',textAlign:'left'}}>
          {props.data['des4']}
         </p>
         <br/><br/>
@@ -193,13 +193,13 @@ let name=items[i]
         {
         event_items[i].push(
 
-			<Col style={{textAlign:'center'}} xs={12} sm={12} md={4} lg={4} xl={4} onClick={()=>{this.setState({modal_data:this.state[name][x], modalShow:true})}}>
-        <div style={{borderBottom:'2px solid #FFCC03',marginBottom:'1rem'}}>
+			<Col style={{textAlign:''}} xs={12} sm={12} md={4} lg={4} xl={4} onClick={()=>{this.setState({modal_data:this.state[name][x], modalShow:true})}}>
+        <div style={{padding:"10px",borderBottom:'2px solid #FFCC03',marginBottom:'1rem'}}>
 											<Image style={{height:'200px',width:'100%'}} src={"/static/media/"+this.state[name][x]['img1']} thumbnail />
 											 <br/>
 											 <br/> 
-											 <h4 className="family" style={{textAlign:'center', fontWeight:'700',marginBottom:'0'}}>{this.state[name][x]['subject']}</h4>
-											 <p  style={{marginBottom:'0px'}} className="text-muted "><br/>{this.state[name][x]['des1'].substring(0, 100)+' [..]'}<span style={{color:'#f09217'}}>read more>></span>
+											 <h5 className="family" style={{fontWeight:'700',marginBottom:'0'}}>{this.state[name][x]['subject']}</h5>
+											 <p  style={{marginBottom:'0px', fontSize: '18px'}} className="text-muted "><br/>{this.state[name][x]['des1'].substring(0, 100)+' [..]'}<br /><br /><span style={{color:'#f09217'}}>Read more&nbsp;<span>>></span></span>
 											 <br/><br/>
 											 </p>
         </div>

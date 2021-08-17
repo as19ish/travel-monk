@@ -185,8 +185,49 @@ let data = new FormData();
     } else {
       $imagePreview = (<Image thumbnail roundedCircle variant="top" style={{height:'100px',width:'100px'}} />);
     }
-
+    let src = "/static/media/home_images/";
+//let images = ["3.jpg","28.jpg","6.jpg","7.jpg","10.jpg","13.jpg","15.jpg","16.jpg","18.jpg","21.jpg","22.jpg","23.jpg","24.jpg"];
+let images = ["28.jpg"];
+let elements = images.map((element,i,arr) => {
+  let style_obj ={
+    backgroundImage : "url("+src+element+")"
+  }
+  let cls = i==0?"carousel-item active":"carousel-item";
+  return <div className={cls} style={style_obj}>
+            <div className="carousel-container">
+              <div className="container">
+<h2 className="animate__animated animate__fadeInDown">Review Form</h2>
+                {/* <p className="animate__animated animate__fadeInUp">{params.sub_type.toUpperCase()}</p> */}
+                {/* <a href="#featured-services" className="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a> */}
+              </div>
+            </div>
+        </div>
+        });
     return (
+      <div>
+      <section id="intro" className="height_450px">
+                     <div className="intro-container">
+                       <div id="introCarousel" className="carousel  slide carousel-fade" data-ride="carousel">
+                 
+                         <ol className="carousel-indicators"></ol>
+                 
+                         <div className="carousel-inner" role="listbox">            
+                          {elements}
+                         </div>
+                 
+                         {/* <a className="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                           <span className="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                           <span className="sr-only">Previous</span>
+                         </a>
+                 
+                         <a className="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                           <span className="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                           <span className="sr-only">Next</span>
+                         </a> */}
+                 
+                       </div>
+                     </div>
+                   </section>
     <div className="review-form-sec">
       <div className="row">
         <div className="col-md-7 col-sm-7">
@@ -320,7 +361,7 @@ let data = new FormData();
         </div>
 </div>
 </div>
-
+</div>
     )
   }
 }

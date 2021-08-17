@@ -16,7 +16,7 @@ let width = '100%';
 <div>
 <div className='div_static_back_student'>
 </div>
-<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Customized Student Trip with <span style={{color:'#ffc107'}}>Hike2Heaven</span></h2>
+<h2 className="all_blogs_heading" style={{marginTop:'30px',marginBottom:'30px'}}>Customized Student Trips</h2>
 <Container fluid className='rafting_container_padding'>
   <Row>
     <Col sm={12} md={12} lg={8}>
@@ -24,7 +24,7 @@ let width = '100%';
     <br/>
    
    <div className='padding_20'>
-    <p style={{fontSize:'1rem', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
+    <p style={{fontSize:'18px', fontWeight:'500',lineHeight: '30px',whiteSpace:'pre-line'}}>
       You can customize your treks as per your choice. For more details please contact us.
 	</p>
 	

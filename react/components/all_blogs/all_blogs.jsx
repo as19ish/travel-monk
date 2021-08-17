@@ -59,8 +59,8 @@ let variant = this.props.blogs;
                       <a className="category-b">News</a>
                     </div>
                     <div className="card-title-b" style={{margin:"10px 0px"}}>
-                      <p className="title-2">
-                        <a style={{color: "#fff",margin:"10px 0px"}}>{this.props.blogs.blog_subject}</a>
+                      <p>
+                        <a style={{color: "#fff",fontWeight: 'bold',margin:"10px 0px"}}>{this.props.blogs.blog_subject}</a>
                       </p>
                     </div>
                     <div className="card-date">

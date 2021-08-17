@@ -167,8 +167,6 @@ class Example extends React.Component{
           </Container>         
             
 
-            <hr />
-
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={()=>{this.close()}}>Close</Button>

@@ -198,7 +198,6 @@ padding-left: 0 !important;
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 12px!important;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -232,7 +231,7 @@ padding-left: 0 !important;
 
 .nav-menu .drop-down ul a {
   padding: 0.3em 0em;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: none;
   color: #191919;
 }
@@ -465,6 +464,7 @@ padding-left: 0 !important;
 }
 
 #intro p {
+  font-size: 24px;
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
@@ -1319,8 +1319,8 @@ height:330px;
 #testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
+  margin: 20px 0 10px 0;
+  color: #191919;
   text-align: center;
 }
 
@@ -1347,6 +1347,7 @@ height:330px;
 
 #testimonials .testimonial-item p {
   margin: 0 auto 0px auto;
+  font-size: 20px;
 }
 
 #testimonials .owl-nav, #testimonials .owl-dots {

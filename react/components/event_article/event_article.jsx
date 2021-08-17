@@ -164,7 +164,7 @@ let name=items[i]
         {
            if(this.state.flag!=name)
            {
-           event_items[i].push(<div className='m-left-30' style={{textAlign:'center',marginTop:'50px'}}><Button className='ev_button' onClick={()=>this.handle_expand(name)}>View All</Button></div>)
+           event_items[i].push(<div className='m-left-30' style={{textAlign:'center',fontSize:"18px", marginTop:'50px'}}><Button className='ev_button' onClick={()=>this.handle_expand(name)}>View All</Button></div>)
            break;
            }
         }
@@ -174,12 +174,12 @@ let name=items[i]
         <div className="carousel-item-c">
                 <div className="card-box-b card-shadow news-box">
                   <div className="img-box-b">
-                    <img src={"/static/media/"+this.state[name][x]['img1']} alt="" className="img-b img-fluid" style={{height:'150px'}}/>
+                    <img src={"/static/media/"+this.state[name][x]['img1']} alt="events_article" className="img-b img-fluid" style={{height:'180px',width: '100%'}}/>
                   </div>
                   
                     <div className="card-header-b">
-                      <div className="card-title-b">
-                        <h4 className="title-2">
+                      <div className="card-title-b" style={{margin:'0'}}>
+                        <h4 className="title-2" style={{margin: "0"}}>
                           <a>{this.state[name][x]['subject']}</a>
                         </h4>
                       </div>
@@ -243,7 +243,8 @@ let src = "/static/media/home_images/";
                        </div>
                      </div>
                    </section>
-
+                   
+  <div className="container">
     <Tabs defaultActiveKey={"EVENTS"} id="uncontrolled-tab-example"  >				   
     <Tab eventKey="EVENTS" title="EVENTS">							
         <Container className="blog_tab_container" >
@@ -287,6 +288,7 @@ let src = "/static/media/home_images/";
 		</Tab>
 
 		</Tabs>
+    </div>
 			   
     
 

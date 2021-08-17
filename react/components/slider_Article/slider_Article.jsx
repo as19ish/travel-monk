@@ -14,7 +14,7 @@ function MyVerticallyCenteredModal(props) {
       centered
       style={{color:'white'}}
     >
-      <Modal.Header closeButton className="modal_cross_sign_white" style={{background:'black'}}>
+      <Modal.Header closeButton className="modal_cross_sign_white" style={{background:'#191919'}}>
         <Modal.Title id="contained-modal-title-vcenter" style={{color:'#FFCC03',fontSize:'1.2rem'}}>
          LATEST UPDATES
         </Modal.Title>
@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
         </p>
 		<br/>
 		<Image src={props.src} thumbnail /><br/><br/>
-        <p id='replace_br' style={{whiteSpace:'pre-line',color:'black',fontSize:'1.2rem',fontWeight:'600'}}>
+        <p id='replace_br' style={{whiteSpace:'pre-line',color:'#191919',fontSize:'1.4rem',fontWeight:'600'}}>
           {props.data}
         </p>
       </Modal.Body> 

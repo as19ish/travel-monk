@@ -218,48 +218,50 @@ let data = new FormData();
     let {imagePreviewUrl} = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = (<Image thumbnail roundedCircle variant="top" src={imagePreviewUrl} style={{height:'200px',width:'200px'}} />);
+      $imagePreview = (<Image thumbnail roundedCircle variant="top" src={imagePreviewUrl} style={{height:'100px',width:'100px'}} />);
     } else {
-      $imagePreview = (<Image thumbnail roundedCircle variant="top" style={{height:'200px',width:'200px'}} />);
+      $imagePreview = (<Image thumbnail roundedCircle variant="top" style={{height:'100px',width:'100px'}} />);
     }
 
     let {imagePreviewUrl1} = this.state;
     let $imagePreview1 = null;
     if (imagePreviewUrl1) {
-      $imagePreview1 = (<Image thumbnail variant="top" src={imagePreviewUrl1} style={{height:'300px',width:'300px'}} />);
+      $imagePreview1 = (<Image thumbnail variant="top" src={imagePreviewUrl1} style={{height:'100px',width:'100px'}} />);
     } else {
-      $imagePreview1 = (<Image thumbnail variant="top" style={{height:'300px',width:'300px'}} />);
+      $imagePreview1 = (<Image thumbnail variant="top" style={{height:'100px',width:'100px'}} />);
     }
 
     return (
-    <div>
-
-<Form onSubmit={this.handleSubmit} style={{padding:'2% 5%'}}>
-        <legend style={{textTransform:'uppercase'}}>Trekker Story Form</legend>
-
-
-        <Container fluid style={{padding:'4%', background:'whitesmoke',borderRadius:'50px'}}>
-<Row>
-<Col style={{textAlign:'center'}}>
-<p style={{display:'inline',fontSize:'1.1rem'}}>We <b>MOUNTAINS-ROVER</b> Welcome You , Please Share Your Experience Here.</p>
+    <div style={{marginTop: '100px',height: '800px',padding:'2em'}}>
+      <div className="row">
+        <div className="col-md-7 col-sm-12">
+      <h2 style={{textTransform:'uppercase'}}>Trekker Story Form</h2>
+      <Row style={{marginTop: '50px',marginBottom: '30px'}}>
+<Col>
+<p style={{display:'inline',fontSize:'20px'}}>We <b>MOUNTAINS-ROVER</b> Welcome You , Please Share Your Experience Here.</p>
 </Col>
 </Row>
-<br/>
-<br/>
+</div>
+<div className="col-md-5 col-sm-12">
+<Form onSubmit={this.handleSubmit} className="trekker-story-form" >
+        
+
+
+        <Container fluid style={{padding:'1em', background:'whitesmoke',borderRadius:'5px'}}>
         <Row>
         <Col>
 
 
 <Form.Group controlId="exampleForm.ControlInput1" style={{textAlign:'left'}}>
-                <Form.Label className='label_style'>1. Your Name</Form.Label><br/>
-            <Form.Control type="text" value={this.state.name} onChange={this.name_handleChange} className='width_50_in_large' style={{width:'30%'}}/>
+                <Form.Label className='label_style'>Full Name</Form.Label><br/>
+            <input className="form-control mb-20" type="text" value={this.state.name} onChange={this.name_handleChange} />
             </Form.Group>
 
 <Form.Group controlId="exampleForm.ControlInput2" style={{textAlign:'left'}}>
-<Form.Label className='label_style'>2. Select Trek</Form.Label><br/>
+<Form.Label className='label_style'>Select Trek</Form.Label><br/>
 <Dropdown as={'Primary'}>
-                        <Button variant="info" className='width_50_in_large' style={{textTransform:'uppercase',width:'30%'}}>{this.state.track_selected.length!=0?this.state.track_selected[0]['track_name']:'Select Trek'}</Button>
-                        <Dropdown.Toggle split variant="success" id="dropdown-custom-2" />
+                        <Button variant="info" style={{textTransform:'uppercase',width:'80%'}}>{this.state.track_selected.length!=0?this.state.track_selected[0]['track_name']:'Select Trek'}</Button>
+                        <Dropdown.Toggle split variant="success" id="dropdown-custom-2" style={{width: '20%'}}  />
                         <Dropdown.Menu style={{maxHeight:'400px', overflow:'scroll'}}>
                           {item}
                         </Dropdown.Menu>
@@ -268,8 +270,8 @@ let data = new FormData();
 
 
  <Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
-          <Form.Label className='label_style'>3. Add Trek Story Description (Limit 200 character)</Form.Label><br/>
-            <Form.Control as="textarea" rows="10" cols="15" value={this.state.description} onChange={this.description_handleChange} style={{width:'100%'}} />
+          <Form.Label className='label_style'>Add Trek Story Description (Limit 200 character)</Form.Label><br/>
+            <Form.Control as="textarea" cols="5" value={this.state.description} onChange={this.description_handleChange} className="mb-20" style={{width:'100%'}} />
 </Form.Group>
 
 
@@ -278,11 +280,11 @@ let data = new FormData();
         <Col>
 
 
-<Form.Group controlId="exampleForm.ControlInput3" style={{textAlign:'left'}}>
+<Form.Group controlId="exampleForm.ControlInput3" className="mb-20" style={{textAlign:'left'}}>
 
         <Row>
         <Col xs={12} sm={12} md={12} lg={6} >
-        <h5 style={{marginTop:'10%'}}>4. Upload Your Profile Photo (<span style={color_style}>size limit 2 MB</span>)</h5>
+        <label className="label_style">Upload Your Profile Photo (<span style={color_style}>size limit 2 MB</span>)</label>
         <input type="file" onChange={(e)=>this._handleImageChange(e)}/>
         </Col>
         <Col xs={12} sm={12} md={12} lg={6}>
@@ -293,17 +295,13 @@ let data = new FormData();
         </Row>
 </Form.Group>
 
-    <Form.Group controlId="exampleForm.ControlInput1" style={{textAlign:'left'}}>
+    <Form.Group controlId="exampleForm.ControlInput1" className="mb-20" style={{textAlign:'left'}}>
        <Row>
         <Col xs={12} sm={12} md={12} lg={6}>
-        <h5 style={{marginTop:'10%'}}>5. Upload Your Trek Photo (<span style={color_style1}>size limit 2 MB</span>)</h5>
+        <label className="label_style">Upload Your Trek Photo (<span style={color_style1}>size limit 2 MB</span>)</label>
         <input type="file" onChange={(e)=>this._handleImageChange1(e)}/>
         </Col>
-        <Col xs={12} sm={12} md={12} lg={6}>
-                                <div style={{width:'100%',textAlign:'center'}}>
-                                  {$imagePreview1}
-                                    </div>
-        </Col>
+      
         </Row>
 
    </Form.Group>
@@ -336,6 +334,8 @@ let data = new FormData();
 
 
         </Form>
+        </div>
+</div>
 </div>
 
     )

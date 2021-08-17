@@ -29,15 +29,15 @@ function Faq_modal() {
 <div className="home-faqs-container text-left" style={{paddingTop:'10px'}}>
     <div className="row">
         <div className="col-md-6 col-sm-12">
-      <Accordion allowZeroExpanded>
+      <Accordion allowZeroExpanded style={{fontSize:"20px", color:"#191919", borderRadius:"5px"}}>
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     What is camping trek ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>Camping treks are treks in which you spend your night in tents. Tents are pitched in a location which meets the basic requirements of a camping ground like source of water, safety from rocakfall, flash floods, etc, good views to mention a few.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"18px", color:"#777"}}>Camping treks are treks in which you spend your night in tents. Tents are pitched in a location which meets the basic requirements of a camping ground like source of water, safety from rocakfall, flash floods, etc, good views to mention a few.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -46,8 +46,8 @@ function Faq_modal() {
                     What is trekking ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>Trekking is an interesting walking holidays; adventurous journey to discover the diversity of nature and culture by foot on hills or High Mountain areas is called trekking.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>Trekking is an interesting walking holidays; adventurous journey to discover the diversity of nature and culture by foot on hills or High Mountain areas is called trekking.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -56,8 +56,8 @@ function Faq_modal() {
                     Why should I go to the Himalayas ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>A Renowned Spiritual Center To the spiritually inclined, the Himalayas is considered a sacred region. There are sacred places, temples, ashrams, and pilgrimage routes from one end to the other, including the foothill.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>A Renowned Spiritual Center To the spiritually inclined, the Himalayas is considered a sacred region. There are sacred places, temples, ashrams, and pilgrimage routes from one end to the other, including the foothill.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -66,22 +66,22 @@ function Faq_modal() {
                     What is the best time for trekking ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>The best time for trekking can be subjective to your taste. Each season brings a different experience to various aspects of the journey.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>The best time for trekking can be subjective to your taste. Each season brings a different experience to various aspects of the journey.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             </Accordion>
             </div>
             <div className="col-md-6 col-sm-12">
-              <Accordion allowZeroExpanded>
+              <Accordion allowZeroExpanded style={{fontSize:"20px", color:"#191919",borderRadius:"5px"}}>
             <AccordionItem>
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     What kind of clothes are needed for trekking ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>The best time for trekking can be subjective to your taste. Each season brings a different experience to various aspects of the journey.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>The best time for trekking can be subjective to your taste. Each season brings a different experience to various aspects of the journey.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -90,8 +90,8 @@ function Faq_modal() {
                     What type of shoes should I have ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>Sports shoes are a must for any treks you undertake. If you expect days of walking through the hilly terrain make sure you carry your hiking boots. If you do not expect long days of walking, sports shoes will suffice but make sure they are durable and comfortable.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>Sports shoes are a must for any treks you undertake. If you expect days of walking through the hilly terrain make sure you carry your hiking boots. If you do not expect long days of walking, sports shoes will suffice but make sure they are durable and comfortable.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -100,8 +100,8 @@ function Faq_modal() {
                     What are the problem faced while trekking at higher altitudes ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>As our itineraries are constructed by keeping the need of acclimatization, we try and make sure your transition to high altitudes will be an easy one. At times you can suffer from Acute Mountain Sickness (AMS) which causes headaches, lack of appetite, dizziness, and labored breathing upon exertion.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>As our itineraries are constructed by keeping the need of acclimatization, we try and make sure your transition to high altitudes will be an easy one. At times you can suffer from Acute Mountain Sickness (AMS) which causes headaches, lack of appetite, dizziness, and labored breathing upon exertion.</p>
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem>
@@ -110,8 +110,8 @@ function Faq_modal() {
                     How difficult is the trekking ?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
-                <p>The difficulty of our trekking depends on where you want to trek and how long you want to go. The shorter Trekking tend to be easier while the longer ones require some physical fitness. Be prepared for some steep trails leading to amazing views.</p>
+                <AccordionItemPanel style={{background:"#fff"}}>
+                <p style={{fontSize:"20px", color:"#777"}}>The difficulty of our trekking depends on where you want to trek and how long you want to go. The shorter Trekking tend to be easier while the longer ones require some physical fitness. Be prepared for some steep trails leading to amazing views.</p>
                 </AccordionItemPanel>
             </AccordionItem>
       </Accordion>

@@ -27,11 +27,11 @@ return(
     <div className="col-md-4 col-sm-12">
       <div className="extra1-post center mb-40">
         <div className="extra1-post-img">
-          <img src={GroupPic} alt="" />
+          <img src={GroupPic} alt="Smaller Groups" />
         </div>
-        <p className='light-color  mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
-        &nbsp;<span>Smaller Groups & Quality Services</span>.</p>
+        &nbsp;Smaller Groups & Quality Services.</p>
       </div>
     </div>
     <div className="col-md-4 col-sm-12">
@@ -39,7 +39,7 @@ return(
         <div className="extra1-post-img">
           <img src={CampPic} alt="" />
         </div>
-        <p className='light-color  mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color  mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
         &nbsp;<span>Best Camps & Stay</span>.</p>
       </div>
@@ -49,7 +49,7 @@ return(
         <div className="extra1-post-img">
           <img src={ForestPic} alt="" />
         </div>
-        <p className='light-color mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
         &nbsp;<span>Eco-Friendly Trips</span>.</p>
       </div>
@@ -61,7 +61,7 @@ return(
         <div className="extra1-post-img">
           <img src={CertifiedPic} alt="" />
         </div>
-        <p className='light-color mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
         &nbsp;<span>Local & Certified Guides</span>.</p>
       </div>
@@ -71,7 +71,7 @@ return(
         <div className="extra1-post-img">
           <img src={ShieldPic} alt="" />
         </div>
-        <p className='light-color  mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color  mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
         &nbsp;<span>No Compromise with Safety</span>.</p>
       </div>
@@ -81,7 +81,7 @@ return(
         <div className="extra1-post-img">
           <img src={FoodPic} alt="" />
         </div>
-        <p className='light-color mt-20'>
+        <p style={{fontSize:"20px"}} className='light-color mt-20'>
         <i className="fa fa-check-circle" aria-hidden="true"></i>
         &nbsp;<span>Best Quality Meals</span>.</p>
       </div>

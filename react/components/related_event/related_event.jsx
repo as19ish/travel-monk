@@ -178,7 +178,7 @@ let name=items[i]
 
 <div>
 
-<h2 className="all_blogs_heading">Related Items For <span style={{color:'#ffc107'}}>{this.props.name}</span></h2>
+<h5 className="all_blogs_heading">Related Items For <span style={{color:'#ffc107'}}>{this.props.name}</span></h5>
    
 {Object.keys(this.state.data).length==0?<h6>No Related Data Available For This Trek. Click <Link to="/event_article" style={{textDecoration:'underline',color:'blue'}}>
                          Events+Article+Blogs+Info
@@ -197,7 +197,6 @@ let name=items[i]
 	
 	{Object.keys(this.state.blog).length==0?null:	
      <Container style={{marginTop:'50px'}}>
-    <h2 className='event_heading'>BLOGS</h2>
      <Row className='row-cols-md-4 row-cols-lg-4 row-cols-4'>
         {this.state.loading?<div><br/><br/><h4 style={{textAlign:'center'}}>loading....</h4></div>:event_items[1]}
       </Row>

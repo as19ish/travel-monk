@@ -1,6 +1,6 @@
 .call_back_fixed_button{
-    color: white !important;
-    background-color: #FFCC03 !important;
+    color: #191919 !important;
+    background-color: #fff !important;
     z-index: 8000;
     -ms-transform: rotate(270deg);
 transform: rotate(270deg);
@@ -9,7 +9,7 @@ transform: rotate(270deg);
 -webkit-box-shadow: -2px 0px 5px -2px rgba(89,89,89,0.75);
 -moz-box-shadow: -2px 0px 5px -2px rgba(89,89,89,0.75);
     top: 50%;
-    font-size:14px;
+    font-size:18px;
     position: fixed;
     display:block;
     border: none;

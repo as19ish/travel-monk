@@ -35,13 +35,8 @@ display:inline;
   position: relative;
   background: #fff;
   height: 1000px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
-
-.jumbotron{
-  background: #fff!important;
-}
-
 
 .review-form-sec .review-form{
  max-width: 400px;
