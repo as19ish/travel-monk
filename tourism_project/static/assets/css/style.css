@@ -269,7 +269,7 @@ padding-left: 0 !important;
 
 
 /* Mobile Navigation */
-.mobile-nav-toggle {
+.mobile-nav-toggle-2 {
   display: none;
   position: fixed;
   right: 15px;
@@ -305,7 +305,7 @@ padding-left: 0 !important;
     display: none;
   }
   /* Mobile Navigation */
-.mobile-nav-toggle {
+.mobile-nav-toggle-2 {
   display:block;
   }
 
@@ -394,7 +394,7 @@ padding-left: 0 !important;
   visibility: visible;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
+.mobile-nav-active .mobile-nav-toggle-2 i {
   color: #fff;
 }
 
