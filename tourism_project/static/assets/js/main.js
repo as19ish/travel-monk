@@ -4,6 +4,12 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function togg() {
+  console.log('mobile-nav-active');
+  $('body').toggleClass('mobile-nav-active');
+  $('.mobile-nav-toggle-2 i').toggleClass('icofont-navigation-menu icofont-close');
+  $('.mobile-nav-overly').toggle();
+}
 (function($) {
   "use strict";
   // Preloader
@@ -88,18 +94,12 @@
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
-    // var $mobile_nav = $('.nav-menu').clone().prop({
-    //   class: 'mobile-nav d-lg-none'
-    // });
-    // $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle-2 d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-    $('body').append('<div class="mobile-nav-overly"></div>');
-
-    $(document).on('click', '.mobile-nav-toggle-2', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle-2 i').toggleClass('icofont-navigation-menu icofont-close');
-      $('.mobile-nav-overly').toggle();
+    var $mobile_nav = $('.nav-menu').clone().prop({
+      class: 'mobile-nav d-lg-none'
     });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button onclick="togg()" type="button" class="mobile-nav-toggle-3 d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
       e.preventDefault();
